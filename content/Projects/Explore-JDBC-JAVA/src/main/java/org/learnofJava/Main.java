@@ -30,12 +30,25 @@ public class Main {
                 .dataSource("jdbc:mysql://localhost:3306/db_JDBC","user","root")
                 .locations("classpath:db/migration")
                 .load();
-        // EXECUTO AS MIGRATIONS
+        // TODO EXECUTO AS MIGRATIONS
+//        flaway.repair();
         flaway.migrate();
+
 
         //TODO BUSADNO POR TODAS AS ENTITIDADES
 //        List<Employee> employeeList =  employeeDAO.findAll();
 //employeeList.forEach(employee -> System.out.println(employee.getName()));
+
+
+        // CREATED NEW REGISTER
+//        Employee employee = new Employee();
+//        employee.setName("Julia");
+//        employee.setSalary(BigDecimal.valueOf(2000));
+//        employee.setBirthday(OffsetDateTime.now().minusYears(15));
+//
+//        employeeDAO.insert(employee);
+
+
 
 
 
@@ -44,14 +57,14 @@ public class Main {
 //        System.out.println(employee.toString());
 
 
-
-        // TODO UPDATE EMPLOYER
+//
+//        // TODO UPDATE EMPLOYER
 //        Employee employee =  employeeDAO.finsById(Long.valueOf(1));
 //        System.out.println(employee.toString());
 //
-//        employee.setName("Murilo");
-//        employee.setSalary(BigDecimal.valueOf(3000));
-//        employee.setBirthday(OffsetDateTime.now().minusYears(12));
+//        employee.setName("Kelly Diniz");
+//        employee.setSalary(BigDecimal.valueOf(1800));
+//        employee.setBirthday(OffsetDateTime.now().minusYears(24));
 //
 //        employeeDAO.update(employee);
 //         employee =  employeeDAO.finsById(Long.valueOf(1));

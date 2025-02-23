@@ -9,3 +9,7 @@ ENV MYSQL_PASSWORD=root
 
 # Exponha a porta 3306 para acessar o MySQL fora do contêiner
 EXPOSE 3306
+
+# Adicione a configuração para permitir a criação de triggers sem o privilégio SUPER
+## ASSIM CONSIGO CRIAR TRIGEGR SEM IMPECILIO
+CMD ["mysqld", "--log-bin-trust-function-creators=1"]
