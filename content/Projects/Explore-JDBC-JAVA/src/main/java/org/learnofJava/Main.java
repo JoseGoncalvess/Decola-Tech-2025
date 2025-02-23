@@ -8,7 +8,9 @@ import java.math.BigDecimal;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.time.OffsetDateTime;
+import java.util.List;
 
+import static java.lang.System.in;
 import static org.learnofJava.config.ConnectionUltil.getConnection;
 
 public class Main {
@@ -31,14 +33,32 @@ public class Main {
         // EXECUTO AS MIGRATIONS
         flaway.migrate();
 
-        var employee = new  Employee();
-        employee.setName("Maria");
-        employee.setSalary(BigDecimal.valueOf(1780));
-        employee.setBirthday(OffsetDateTime.now().minusYears(24));
-
-        employeeDAO.insert(employee);
+        // BUSADNO POR TODAS AS ENTITIDADES
+//        List<Employee> employeeList =  employeeDAO.findAll();
+//employeeList.forEach(employee -> System.out.println(employee.getName()));
 
 
+
+        // CONSULTANDO ENTITY POR ID
+//        Employee employee =  employeeDAO.finsById(Long.valueOf(1));
+//        System.out.println(employee.toString());
+
+
+
+        // UPDATE EMPLOYER
+//        Employee employee =  employeeDAO.finsById(Long.valueOf(1));
+//        System.out.println(employee.toString());
+//
+//        employee.setName("Murilo");
+//        employee.setSalary(BigDecimal.valueOf(3000));
+//        employee.setBirthday(OffsetDateTime.now().minusYears(12));
+//
+//        employeeDAO.update(employee);
+//         employee =  employeeDAO.finsById(Long.valueOf(1));
+//        System.out.println(employee.toString());
+
+        employeeDAO.delete(1);
+        employeeDAO.findAll().forEach(System.out::println);
 
     }
 

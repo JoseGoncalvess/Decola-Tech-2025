@@ -16,4 +16,14 @@ public class Employee {
     private BigDecimal salary;
 
     private OffsetDateTime birthday;
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", salary=" + salary +
+                ", birthday=" + birthday +
+                '}';
+    }
 }
