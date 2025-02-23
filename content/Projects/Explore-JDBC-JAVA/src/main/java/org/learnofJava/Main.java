@@ -18,14 +18,14 @@ public class Main {
     private final static EmployeeDAO employeeDAO = new EmployeeDAO();
     public static void main(String[] args) {
 
-        // VERIFICO A CONECTION COM DATA BASE
+        //TODO VERIFICO A CONECTION COM DATA BASE
         try ( var connction = getConnection()){
             System.out.println("Conectado ao MySQL com sucesso!");
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
-        // CONFIGURO O FLYWAY PARA CONECTAR E CARREGA AS MIGRATIONS
+        //TODO CONFIGURO O FLYWAY PARA CONECTAR E CARREGA AS MIGRATIONS
         var flaway = Flyway.configure()
                 .dataSource("jdbc:mysql://localhost:3306/db_JDBC","user","root")
                 .locations("classpath:db/migration")
@@ -33,19 +33,19 @@ public class Main {
         // EXECUTO AS MIGRATIONS
         flaway.migrate();
 
-        // BUSADNO POR TODAS AS ENTITIDADES
+        //TODO BUSADNO POR TODAS AS ENTITIDADES
 //        List<Employee> employeeList =  employeeDAO.findAll();
 //employeeList.forEach(employee -> System.out.println(employee.getName()));
 
 
 
-        // CONSULTANDO ENTITY POR ID
+        // TODO CONSULTANDO ENTITY POR ID
 //        Employee employee =  employeeDAO.finsById(Long.valueOf(1));
 //        System.out.println(employee.toString());
 
 
 
-        // UPDATE EMPLOYER
+        // TODO UPDATE EMPLOYER
 //        Employee employee =  employeeDAO.finsById(Long.valueOf(1));
 //        System.out.println(employee.toString());
 //
@@ -57,8 +57,9 @@ public class Main {
 //         employee =  employeeDAO.finsById(Long.valueOf(1));
 //        System.out.println(employee.toString());
 
-        employeeDAO.delete(1);
-        employeeDAO.findAll().forEach(System.out::println);
+//        // TODO DELETENDAOD REGISTRO
+//        employeeDAO.delete(1);
+//        employeeDAO.findAll().forEach(System.out::println);
 
     }
 
