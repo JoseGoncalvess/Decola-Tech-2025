@@ -1,8 +1,10 @@
 package org.learnofJava;
 
 import org.flywaydb.core.Flyway;
+import org.learnofJava.domain.DAO.EmployeeAuditDAO;
 import org.learnofJava.domain.DAO.EmployeeDAO;
 import org.learnofJava.domain.entity.Employee;
+import org.learnofJava.domain.entity.EmployeeAuditEntity;
 
 import java.math.BigDecimal;
 import java.sql.Connection;
@@ -16,6 +18,7 @@ import static org.learnofJava.config.ConnectionUltil.getConnection;
 public class Main {
 
     private final static EmployeeDAO employeeDAO = new EmployeeDAO();
+    private final static EmployeeAuditDAO employeeAudit = new EmployeeAuditDAO();
     public static void main(String[] args) {
 
         //TODO VERIFICO A CONECTION COM DATA BASE
@@ -73,6 +76,18 @@ public class Main {
 //        // TODO DELETENDAOD REGISTRO
 //        employeeDAO.delete(1);
 //        employeeDAO.findAll().forEach(System.out::println);
+
+       //  CREATED NEW REGISTER
+        Employee employee = new Employee();
+        employee.setName("Anny");
+        employee.setSalary(BigDecimal.valueOf(15000));
+        employee.setBirthday(OffsetDateTime.now().minusYears(20));
+
+        employeeDAO.insert(employee);
+
+        employeeAudit.getEntities().forEach(System.out::println);
+
+
 
     }
 
