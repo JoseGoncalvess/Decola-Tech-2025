@@ -1,0 +1,27 @@
+## Introdução
+
+E uma ferramenta poderosa, para criação de sisteams robustos web, que faz uso forte de **HTM** **CSS** e **JS**, claro que o forte dele é o uso de **TypeScript**.
+
+Reoslvenod Problemas por meio de componentização, fazenod um gerenciamento de estado mais robusto facilitando o navegação de enre paginas. Assim **trasnpilando** para as tecnologia origem.
+**"Afinal tudo no final do dia vira html e CSS"**
+
+- DICA VALIOZA : Aprender a base é extremamente necessário, assim facilitando amduança da ferramente!
+
+## VERSOES DO ANGULAS
+
+-V1 - Angular JS [DOCUMENTAÇÃO](https://angularjs.org/)
+
+-V2 - Angular (2 a 16) [DOCUMENTAÇÃO](https://v2.angular.io/)
+
+-V3 - Angular 17> [DOCUMENTAÇÃO](https://angular.dev/)
+
+A verssão 2 a 16 -> 17 algumas coisas são compatives.
+
+## A intalção se da por meio do propriotuorial da pagina oficial:
+
+Basta seguir o passo a a passo e ao final veriicar de o CLI foi instalado corretamente.
+
+[INSTALÇÃO PASSO A PASSO](https://angular.dev/installation)
+[DOCUMENTAÇÂO DA CLI](https://angular.dev/cli)
+
+Mas caso surgir alguma duvida, serve consultar a [docuemntação criada pelo Felipão](https://felipe-aguiar.gitbook.io/angular-v17). O Cara é brabo d+
