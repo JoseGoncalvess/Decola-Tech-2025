@@ -3,7 +3,7 @@ FROM mysql:8.0
 
 # Define variáveis de ambiente para a configuração do MySQL
 ENV MYSQL_ROOT_PASSWORD=root
-ENV MYSQL_DATABASE=db_JDBC
+ENV MYSQL_DATABASE=employees_db
 ENV MYSQL_USER=user
 ENV MYSQL_PASSWORD=root
 

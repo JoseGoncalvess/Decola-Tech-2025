@@ -5,6 +5,7 @@ import org.learnofJava.config.ConnectionUltil;
 import org.learnofJava.domain.entity.Employee;
 
 import java.sql.SQLException;
+import java.sql.Timestamp;
 import java.time.OffsetDateTime;
 import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
@@ -17,6 +18,7 @@ public class EmployeeDAO {
         try( var connection = ConnectionUltil.getConnection();
             var statment = connection.createStatement();
         ) {
+
             statment.executeUpdate("INSERT INTO employees (name, salary, birthday) values('"+employee.getName()+"', "+employee.getSalary().toString()+", '"+employee.getBirthday()+"')");
             System.out.println(statment.getUpdateCount());
             if (statment instanceof  StatementImpl impl) {

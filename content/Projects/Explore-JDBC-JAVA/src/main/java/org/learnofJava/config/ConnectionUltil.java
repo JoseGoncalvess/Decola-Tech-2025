@@ -10,7 +10,7 @@ import java.sql.SQLException;
 @NoArgsConstructor
 public class ConnectionUltil {
     public  static Connection getConnection() throws SQLException{
-          String url = "jdbc:mysql://localhost:3306/db_JDBC";
+          String url = "jdbc:mysql://localhost:3306/employees_db";
          String user = "user";
          String password = "root";
 
