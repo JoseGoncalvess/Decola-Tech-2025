@@ -1,4 +1,4 @@
-package org.newTechDeveloper.service
+package org.newTechDeveloper.service.board
 
 import lombok.AllArgsConstructor
 import org.newTechDeveloper.persistence.dao.BoardColumnDAO

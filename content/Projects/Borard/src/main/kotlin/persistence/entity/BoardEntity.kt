@@ -13,7 +13,7 @@ class BoardEntity(
      var name: String?,
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
-     val boardColumns: List<BoardColumnEntity> = ArrayList()
+     var boardColumns: List<BoardColumnEntity> = ArrayList()
 
 ) {
 

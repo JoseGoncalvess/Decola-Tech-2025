@@ -18,10 +18,10 @@ class BoardColumnDAO( private val connection: Connection) {
         val sql = "INSERT INTO BOARDS_COLUMNS (name, `order`, kind, board_id) VALUES (?, ?, ?, ?);"
         connection.prepareStatement(sql).use { statement ->
             var i = 1
-            statement.setString(i++, entity.name)
-            statement.setInt(i++, entity.order!!)
-            statement.setString(i++, entity.kind!!.name)
-            statement.setLong(i, entity.board!!.id!!)
+            statement.setString(1, entity.name)
+            statement.setInt(2, entity.order!!)
+            statement.setString(3, entity.kind!!.name)
+            statement.setLong(4, entity.board!!.id!!)
             statement.executeUpdate()
             if (statement is StatementImpl) {
                 entity.id = statement.lastInsertID
