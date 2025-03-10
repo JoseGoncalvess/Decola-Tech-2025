@@ -7,6 +7,7 @@ import org.newTechDeveloper.persistence.config.DbConectionConfig.Companion.getCo
 import org.newTechDeveloper.persistence.entity.BoardColumnEntity
 import org.newTechDeveloper.persistence.entity.BoardEntity
 import org.newTechDeveloper.persistence.entity.CardEntity
+import org.newTechDeveloper.service.board.BoardColumnQueryService
 import org.newTechDeveloper.service.board.BoardQueryService
 import org.newTechDeveloper.service.card.CardQueryService
 import org.newTechDeveloper.service.card.CardService
@@ -58,9 +59,9 @@ class BoardMenu(private  val entity : BoardEntity) {
     private fun createCard() {
         val card = CardEntity(null,null,null,null)
         println("Informe o título do card")
-        card.title = scanner.next()
+        card.title = scanner.nextLine()
         println("Informe a descrição do card")
-        card.description = scanner.next()
+        card.description = scanner.nextLine()
         card.boardColumn = entity.getInitialColumn()
         getConnection().use { connection ->
             CardService(connection).create(card)
@@ -71,8 +72,8 @@ class BoardMenu(private  val entity : BoardEntity) {
     private fun moveCardToNextColumn() {
         println("Informe o id do card que deseja mover para a próxima coluna")
         val cardId = scanner.nextLong()
-        val boardColumnsInfo = entity.boardColumns.stream()
-            .map<Any> { bc: BoardColumnEntity ->
+        val boardColumnsInfo : MutableList<BoardColumnInfoDTO> = entity.boardColumns.stream()
+            .map{ bc: BoardColumnEntity ->
                 BoardColumnInfoDTO(
                     bc.id!!,
                     bc.order!!,
@@ -95,8 +96,8 @@ class BoardMenu(private  val entity : BoardEntity) {
         val cardId = scanner.nextLong()
         println("Informe o motivo do bloqueio do card")
         val reason = scanner.next()
-        val boardColumnsInfo = entity.boardColumns.stream()
-            .map<Any> { bc: BoardColumnEntity ->
+        val boardColumnsInfo :MutableList<BoardColumnInfoDTO> = entity.boardColumns.stream()
+            .map { bc: BoardColumnEntity ->
                 BoardColumnInfoDTO(
                     bc.id!!,
                     bc.order!!,
@@ -144,7 +145,7 @@ class BoardMenu(private  val entity : BoardEntity) {
             .toList()
         try {
             getConnection().use { connection ->
-                CardService(connection).cancel(cardId, cancelColumn.id, boardColumnsInfo)
+                CardService(connection).cancel(cardId, cancelColumn.id!!, boardColumnsInfo)
             }
         } catch (ex: RuntimeException) {
             println(ex.message)
@@ -159,10 +160,7 @@ class BoardMenu(private  val entity : BoardEntity) {
                 System.out.printf("Board [${b.id},${b.name}]\n")
                 b.columns.forEach { c ->
                     System.out.printf(
-                        "Coluna [${c.name}] tipo: [${c.kind}] tem ${c.cardsAmount} cards\n",
-                        ,
-
-                    )
+                        "Coluna [${c.name}] tipo: [${c.kind}] tem ${c.cardsAmount} cards\n")
                 }
             }
         }
@@ -173,26 +171,20 @@ class BoardMenu(private  val entity : BoardEntity) {
         val columnsIds = entity.boardColumns.stream().map(BoardColumnEntity::id).toList()
         var selectedColumnId = -1L
         while (!columnsIds.contains(selectedColumnId)) {
-            System.out.printf("Escolha uma coluna do board %s pelo id\n", entity.name)
+            System.out.printf("Escolha uma coluna do board ${entity.name} pelo id" )
             entity.boardColumns.forEach(Consumer { c: BoardColumnEntity ->
-                System.out.printf(
-                    "%s - %s [%s]\n",
-                    c.id,
-                    c.name,
-                    c.kind
-                )
+                System.out.println(
+                    "${c.id} - ${c.name} [${c.kind}]")
             })
             selectedColumnId = scanner.nextLong()
         }
         getConnection().use { connection ->
-            val column: Unit = BoardColumnQueryService(connection).findById(selectedColumnId)
-            column.ifPresent { co ->
-                System.out.printf("Coluna %s tipo %s\n", co.getName, co.getKind)
-                co.getCards().forEach { ca ->
+            val column : Optional<BoardColumnEntity>  = BoardColumnQueryService(connection).findById(selectedColumnId)
+            column.ifPresent {columnEntity : BoardColumnEntity ->
+                System.out.printf("Coluna ${columnEntity.name} tipo ${columnEntity.kind}\n")
+                columnEntity.cards.forEach { ca :CardEntity ->
                     System.out.printf(
-                        "Card %s - %s\nDescrição: %s",
-                        ca.getId(), ca.getTitle, ca.getDescription
-                    )
+                        "Card ${ca.id} - ${ca.title}\nDescrição: ${ca.description}")
                 }
             }
         }
@@ -206,13 +198,13 @@ class BoardMenu(private  val entity : BoardEntity) {
             CardQueryService(connection).findById(selectedCardId)
                 .ifPresentOrElse(
                     { cd ->
-                        System.out.printf("Card %s - %s.\n", cd.id, cd.title)
-                        System.out.printf("Descrição: %s\n", cd.description)
+                        System.out.println("Card ${cd.id} - ${cd.title}.")
+                        System.out.println("Descrição: ${ cd.description}",)
                         System.out.println(if (cd.blocked) "Está bloqueado. Motivo: " + cd.blockReason else "Não está bloqueado")
-                        System.out.printf("Já foi bloqueado %s vezes\n", cd.blocksAmount)
-                        System.out.printf("Está no momento na coluna %s - %s\n", cd.columnId, cd.columnName)
+                        System.out.println("Já foi bloqueado ${cd.blocksAmount} vezes")
+                        System.out.println("Está no momento na coluna ${cd.columnId} - ${cd.columnName}")
                     },
-                    { System.out.printf("Não existe um card com o id %s\n", selectedCardId) })
+                    { System.out.printf("Não existe um card com o id $selectedCardId") })
         }
     }
 

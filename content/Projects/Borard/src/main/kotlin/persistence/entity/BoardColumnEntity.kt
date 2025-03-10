@@ -3,7 +3,7 @@ package org.newTechDeveloper.persistence.entity
 import lombok.Data
 import lombok.EqualsAndHashCode
 import lombok.ToString
-import org.newTechDeveloper.persistence.entity.ultils.BoardColumnKindEnum
+import org.newTechDeveloper.persistence.config.utils.enums.BoardColumnKindEnum
 
 @Data
 class BoardColumnEntity(

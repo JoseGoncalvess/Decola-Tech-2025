@@ -2,7 +2,7 @@ package org.newTechDeveloper.persistence.dao
 
 import com.mysql.cj.jdbc.StatementImpl
 import org.newTechDeveloper.dto.CardDetailsDTO
-import org.newTechDeveloper.persistence.config.OffsetDateTimeConverter.toOffsetDateTime
+import org.newTechDeveloper.persistence.config.utils.OffsetDateTimeConverter.Companion.toOffsetDateTime
 import org.newTechDeveloper.persistence.entity.CardEntity
 import java.sql.Connection
 import java.sql.SQLException

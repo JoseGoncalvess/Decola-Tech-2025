@@ -57,5 +57,21 @@ class BoardDAO( private val connection: Connection) {
             return statement.resultSet.next()
         }
     }
+    @Throws(SQLException::class)
+    fun allBoard() : MutableList<BoardEntity> {
+        val boards : MutableList<BoardEntity> = arrayListOf()
+        val sql = "SELECT * FROM BOARDS"
+        connection.prepareStatement(sql).use { statement ->
+            statement.execute()
+            val resultSet = statement.resultSet
+            if (resultSet.next()){
+                val entity = BoardEntity(null,null);
+                entity.id = resultSet.getLong("id")
+                entity.name = resultSet.getString("name")
+                boards.add(entity)
+            }
+            return boards
+        }
+    }
 
 }

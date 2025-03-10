@@ -11,6 +11,17 @@ import java.util.*
 
 class BoardQueryService(private val connection: Connection) {
 
+
+
+    @Throws(SQLException::class)
+    fun findAll(): MutableList<BoardEntity> {
+
+        val dao = BoardDAO(connection)
+        val allBoards : MutableList<BoardEntity> = dao.allBoard()
+        // TODO ADCONAR AS COLUNS
+        return allBoards
+    }
+
     @Throws(SQLException::class)
     fun findById(id: Long?): Optional<BoardEntity> {
         val dao = BoardDAO(connection)

@@ -5,7 +5,7 @@ import lombok.RequiredArgsConstructor
 import org.newTechDeveloper.dto.BoardColumnDTO
 import org.newTechDeveloper.persistence.entity.BoardColumnEntity
 import org.newTechDeveloper.persistence.entity.CardEntity
-import org.newTechDeveloper.persistence.entity.ultils.BoardColumnKindEnum
+import org.newTechDeveloper.persistence.config.utils.enums.BoardColumnKindEnum
 import java.sql.Connection
 import java.sql.SQLException
 import java.util.*
@@ -17,7 +17,6 @@ class BoardColumnDAO( private val connection: Connection) {
     fun insert(entity: BoardColumnEntity): BoardColumnEntity {
         val sql = "INSERT INTO BOARDS_COLUMNS (name, `order`, kind, board_id) VALUES (?, ?, ?, ?);"
         connection.prepareStatement(sql).use { statement ->
-            var i = 1
             statement.setString(1, entity.name)
             statement.setInt(2, entity.order!!)
             statement.setString(3, entity.kind!!.name)

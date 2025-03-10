@@ -4,12 +4,11 @@ import lombok.AllArgsConstructor
 import org.newTechDeveloper.persistence.config.DbConectionConfig.Companion.getConnection
 import org.newTechDeveloper.persistence.entity.BoardColumnEntity
 import org.newTechDeveloper.persistence.entity.BoardEntity
-import org.newTechDeveloper.persistence.entity.ultils.BoardColumnKindEnum
+import org.newTechDeveloper.persistence.config.utils.enums.BoardColumnKindEnum
 import org.newTechDeveloper.service.board.BoardQueryService
 import org.newTechDeveloper.service.board.BoardService
 import java.sql.SQLException
 import java.util.*
-import javax.print.attribute.standard.JobState.PENDING
 
 
 @AllArgsConstructor
@@ -25,17 +24,32 @@ class MainMenu {
             println("1 - Criar um novo board")
             println("2 - Selecionar um board existente")
             println("3 - Excluir um board")
-            println("4 - Sair")
+            println("4 - Exibir Bords existente")
+            println("5 - Sair")
             option = scanner.nextInt()
             when (option) {
                 1 -> createBoard()
                 2 -> selectBoard()
                 3 -> deleteBoard()
-                4 -> System.exit(0)
+                4 -> showAllBoard()
+                5 -> System.exit(0)
                 else -> println("Opção inválida, informe uma opção do menu!")
             }
         }
     }
+
+    @Throws(SQLException::class)
+    private fun showAllBoard() {
+        println("Todos os Board Criados áte o momneto são:")
+        getConnection().use { connection ->
+            val queryService = BoardQueryService(connection)
+            val allBoardsList = queryService.findAll()
+            allBoardsList.isNotEmpty().apply {
+                allBoardsList.forEach{board: BoardEntity -> println(board.toString()) }
+            }
+        }
+    }
+
     @Throws(SQLException::class)
     private fun createBoard() {
         val entity = BoardEntity(null, null,)
@@ -83,7 +97,7 @@ class MainMenu {
             val optional = queryService.findById(id)
             optional.ifPresentOrElse(
                 { b: BoardEntity -> BoardMenu(b).execute() },
-                { System.out.printf("Não foi encontrado um board com id %s\n", id) }
+                { System.out.printf("Não foi encontrado um board com id ${id}\n") }
             )
         }
     }

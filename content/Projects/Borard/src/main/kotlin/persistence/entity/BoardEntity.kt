@@ -3,8 +3,7 @@ package org.newTechDeveloper.persistence.entity
 import lombok.Data
 import lombok.EqualsAndHashCode
 import lombok.ToString
-import org.newTechDeveloper.persistence.entity.BoardColumnEntity
-import org.newTechDeveloper.persistence.entity.ultils.BoardColumnKindEnum
+import org.newTechDeveloper.persistence.config.utils.enums.BoardColumnKindEnum
 import java.util.function.Predicate
 
 @Data
@@ -19,7 +18,7 @@ class BoardEntity(
 
 
     fun getInitialColumn(): BoardColumnEntity {
-        return getFilteredColumn(Predicate<BoardColumnEntity> { bc -> bc.kind!!.equals(BoardColumnKindEnum.INITIAL) })
+        return getFilteredColumn(Predicate<BoardColumnEntity> { bc -> bc.kind!! == BoardColumnKindEnum.INITIAL })
     }
 
     fun getCancelColumn(): BoardColumnEntity {
@@ -30,6 +29,10 @@ class BoardEntity(
         return boardColumns.stream()
             .filter(filter)
             .findFirst().orElseThrow()
+    }
+
+    override fun toString(): String {
+        return "BoardEntity(id=$id, name=$name, boardColumns=$boardColumns)"
     }
 
 }

@@ -1,6 +1,4 @@
-package org.newTechDeveloper.persistence.entity.ultils
-
-import java.util.stream.Stream
+package org.newTechDeveloper.persistence.config.utils.enums
 
 enum class BoardColumnKindEnum {
 

@@ -1,6 +1,6 @@
 package org.newTechDeveloper.dto
 
-import org.newTechDeveloper.persistence.entity.ultils.BoardColumnKindEnum
+import org.newTechDeveloper.persistence.config.utils.enums.BoardColumnKindEnum
 
 data class BoardColumnDTO(
     var id: Long,
