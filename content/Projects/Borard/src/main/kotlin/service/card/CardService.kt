@@ -36,13 +36,9 @@ class CardService( private val connection: Connection) {
         try {
             val dao = CardDAO(connection)
             val optional = dao.findById(cardId)
-            val dto = optional.orElseThrow<RuntimeException>(
-                Supplier<RuntimeException> {
-                    EntityNotFoundException(
-                        "O card de id $cardId não foi encontrado"
-                    )
-                }
-            )
+            val dto = optional.orElseThrow {  EntityNotFoundException(
+                "O card de id $cardId não foi encontrado"
+            ) }
             if (dto.blocked) {
                 throw CardBlockedException("O card $cardId está bloqueado, é necesário desbloquea-lo para mover")
             }

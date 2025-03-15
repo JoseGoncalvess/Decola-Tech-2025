@@ -15,7 +15,7 @@ public class  DbConectionConfig {
           val url = "jdbc:mysql://localhost:3306/board"
           val user = "user"
           val password = "root"
-          var connection = DriverManager.getConnection(url, user, password)
+          val connection = DriverManager.getConnection(url, user, password)
           connection.autoCommit= false
           return connection;
       }

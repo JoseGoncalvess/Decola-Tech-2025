@@ -15,10 +15,9 @@ class CardDAO(private val connection: Connection) {
     fun insert(entity: CardEntity): CardEntity {
         val sql = "INSERT INTO CARDS (title, description, board_column_id) values (?, ?, ?);"
         connection.prepareStatement(sql).use { statement ->
-            var i = 1
-            statement.setString(i++, entity.title)
-            statement.setString(i++, entity.description)
-            statement.setLong(i, entity.boardColumn!!.id!!)
+            statement.setString(1, entity.title)
+            statement.setString(2, entity.description)
+            statement.setLong(3, entity.boardColumn!!.id!!)
             statement.executeUpdate()
             if (statement is StatementImpl) {
                 entity.id = statement.lastInsertID
@@ -28,19 +27,20 @@ class CardDAO(private val connection: Connection) {
     }
 
     @Throws(SQLException::class)
-    fun moveToColumn(columnId: Long?, cardId: Long?) {
+    fun moveToColumn(columnId: Long, cardId: Long) {
         val sql = "UPDATE CARDS SET board_column_id = ? WHERE id = ?;"
         connection.prepareStatement(sql).use { statement ->
-            var i = 1
-            statement.setLong(i++, columnId!!)
-            statement.setLong(i, cardId!!)
+            statement.setLong(1, columnId)
+            statement.setLong(2, cardId)
             statement.executeUpdate()
         }
     }
 
     @Throws(SQLException::class)
-    fun findById(id: Long?): Optional<CardDetailsDTO> {
-        val sql =
+    fun findById(id: Long): Optional<CardDetailsDTO> {
+
+        // TODO MELHORAR A QUERRY TRAZENDO SOMENTE O CARD QUE PERTENCE A O BORD SELECIOBADO
+        var sql =
             """
                 SELECT c.id,
                        c.title,
@@ -59,10 +59,9 @@ class CardDAO(private val connection: Connection) {
                  INNER JOIN BOARDS_COLUMNS bc
                     ON bc.id = c.board_column_id
                   WHERE c.id = ?;
-                
-                """.trimIndent()
+                """;
         connection.prepareStatement(sql).use { statement ->
-            statement.setLong(1, id!!)
+            statement.setLong(1, id)
             statement.executeQuery()
             val resultSet = statement.resultSet
             if (resultSet.next()) {
@@ -71,8 +70,8 @@ class CardDAO(private val connection: Connection) {
                     resultSet.getString("c.title"),
                     resultSet.getString("c.description"),
                     nonNull(resultSet.getString("b.block_reason")),
-                    toOffsetDateTime(resultSet.getTimestamp("b.blocked_at"))!!,
-                    resultSet.getString("b.block_reason"),
+                    blockedAt = toOffsetDateTime(resultSet.getTimestamp("b.blocked_at")),
+                    resultSet.getString("b.block_reason") ?: "Motivo não informado",
                     resultSet.getInt("blocks_amount"),
                     resultSet.getLong("c.board_column_id"),
                     resultSet.getString("bc.name")

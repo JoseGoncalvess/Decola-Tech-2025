@@ -14,6 +14,7 @@ import org.newTechDeveloper.service.card.CardService
 import java.sql.SQLException
 import java.util.*
 import java.util.function.Consumer
+import kotlin.system.exitProcess
 
 
 @AllArgsConstructor
@@ -22,7 +23,7 @@ class BoardMenu(private  val entity : BoardEntity) {
     private val scanner: Scanner = Scanner(System.`in`).useDelimiter("\n")
     fun execute() {
         try {
-            System.out.printf("Bem vindo ao board %s, selecione a operação desejada\n", entity.id)
+            println("Bem vindo ao board ${entity.id}, selecione a operação desejada\n")
             var option = -1
             while (option != 9) {
                 println("1 - Criar um card")
@@ -46,22 +47,22 @@ class BoardMenu(private  val entity : BoardEntity) {
                     7 -> showColumn()
                     8 -> showCard()
                     9 -> println("Voltando para o menu anterior")
-                    10 -> System.exit(0)
+                    10 -> exitProcess(0)
                     else -> println("Opção inválida, informe uma opção do menu")
                 }
             }
         } catch (ex: SQLException) {
             ex.printStackTrace()
-            System.exit(0)
+            exitProcess(0)
         }
     }
     @Throws(SQLException::class)
     private fun createCard() {
         val card = CardEntity(null,null,null,null)
         println("Informe o título do card")
-        card.title = scanner.nextLine()
+        card.title = scanner.next()
         println("Informe a descrição do card")
-        card.description = scanner.nextLine()
+        card.description = scanner.next()
         card.boardColumn = entity.getInitialColumn()
         getConnection().use { connection ->
             CardService(connection).create(card)
@@ -84,6 +85,7 @@ class BoardMenu(private  val entity : BoardEntity) {
         try {
             getConnection().use { connection ->
                 CardService(connection).moveToNextColumn(cardId, boardColumnsInfo)
+
             }
         } catch (ex: RuntimeException) {
             println(ex.message)
@@ -171,10 +173,9 @@ class BoardMenu(private  val entity : BoardEntity) {
         val columnsIds = entity.boardColumns.stream().map(BoardColumnEntity::id).toList()
         var selectedColumnId = -1L
         while (!columnsIds.contains(selectedColumnId)) {
-            System.out.printf("Escolha uma coluna do board ${entity.name} pelo id" )
+            println("Escolha uma coluna do board ${entity.name} pelo id" )
             entity.boardColumns.forEach(Consumer { c: BoardColumnEntity ->
-                System.out.println(
-                    "${c.id} - ${c.name} [${c.kind}]")
+               println("${c.id} - ${c.name} [${c.kind}]")
             })
             selectedColumnId = scanner.nextLong()
         }
@@ -198,13 +199,13 @@ class BoardMenu(private  val entity : BoardEntity) {
             CardQueryService(connection).findById(selectedCardId)
                 .ifPresentOrElse(
                     { cd ->
-                        System.out.println("Card ${cd.id} - ${cd.title}.")
-                        System.out.println("Descrição: ${ cd.description}",)
-                        System.out.println(if (cd.blocked) "Está bloqueado. Motivo: " + cd.blockReason else "Não está bloqueado")
-                        System.out.println("Já foi bloqueado ${cd.blocksAmount} vezes")
-                        System.out.println("Está no momento na coluna ${cd.columnId} - ${cd.columnName}")
+                        println("Card ${cd.id} - ${cd.title}.")
+                        println("Descrição: ${ cd.description}",)
+                        println(if (cd.blocked) "Está bloqueado. Motivo: " + cd.blockReason else "Não está bloqueado")
+                        println("Já foi bloqueado ${cd.blocksAmount} vezes")
+                        println("Está no momento na coluna ${cd.columnId} - ${cd.columnName}")
                     },
-                    { System.out.printf("Não existe um card com o id $selectedCardId") })
+                    { println("Não existe um card com o id $selectedCardId") })
         }
     }
 

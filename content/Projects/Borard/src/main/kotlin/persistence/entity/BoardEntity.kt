@@ -32,7 +32,9 @@ class BoardEntity(
     }
 
     override fun toString(): String {
-        return "BoardEntity(id=$id, name=$name, boardColumns=$boardColumns)"
+        return "Board:[ id:$id\n " +
+                "name: $name\n" +
+                " - boardColumns: ${boardColumns.stream().toList()}]"
     }
 
 }

@@ -9,6 +9,7 @@ import org.newTechDeveloper.service.board.BoardQueryService
 import org.newTechDeveloper.service.board.BoardService
 import java.sql.SQLException
 import java.util.*
+import kotlin.system.exitProcess
 
 
 @AllArgsConstructor
@@ -32,7 +33,7 @@ class MainMenu {
                 2 -> selectBoard()
                 3 -> deleteBoard()
                 4 -> showAllBoard()
-                5 -> System.exit(0)
+                5 -> exitProcess(0)
                 else -> println("Opção inválida, informe uma opção do menu!")
             }
         }
@@ -66,9 +67,8 @@ class MainMenu {
         val initialColumn = createColumn(initialColumnName, BoardColumnKindEnum.INITIAL, 0)
         columns.add(initialColumn)
 
-        // TODO VERIFICAR POSSIVEL ERRO DE EXCULÇÃO
         for (i in 0 until additionalColumns) {
-            println("Informe o nome da coluna de tarefa PENDENTE do ")
+            println("Informe o nome da coluna de tarefa PENDENTE do Board ")
             val pendingColumnName = scanner.next()
             val pendingColumn = createColumn(pendingColumnName, BoardColumnKindEnum.PENDING, i + 1)
             columns.add(pendingColumn)

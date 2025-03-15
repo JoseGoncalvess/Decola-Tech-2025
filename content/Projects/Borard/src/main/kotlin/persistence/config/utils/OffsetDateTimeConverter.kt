@@ -6,13 +6,14 @@ import java.time.OffsetDateTime
 import java.time.ZoneOffset.UTC
 import java.util.Objects.nonNull
 import lombok.AccessLevel.PRIVATE
+import java.time.ZoneOffset
 
 
 @NoArgsConstructor(access = PRIVATE)
 class OffsetDateTimeConverter {
     companion object{
-        fun toOffsetDateTime(value: Timestamp): OffsetDateTime? {
-            return if (nonNull(value)) OffsetDateTime.ofInstant(value.toInstant(), UTC) else null
+        fun toOffsetDateTime(value: Timestamp?): OffsetDateTime? {
+             return value?.toInstant()?.atOffset(ZoneOffset.UTC)
         }
 
         fun toTimestamp(value: OffsetDateTime): Timestamp? {

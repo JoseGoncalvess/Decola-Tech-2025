@@ -9,6 +9,7 @@ import org.newTechDeveloper.persistence.config.utils.enums.BoardColumnKindEnum
 import java.sql.Connection
 import java.sql.SQLException
 import java.util.*
+import java.util.Objects.isNull
 
 
 @RequiredArgsConstructor
@@ -107,7 +108,7 @@ class BoardColumnDAO( private val connection: Connection) {
                 entity.kind = BoardColumnKindEnum.findByName(resultSet.getString("bc.kind"));
                 do {
                     val card :CardEntity  = CardEntity(null,null,null,null);
-                    if (resultSet.getString("c.title") == null) {
+                    if (isNull(resultSet.getString("c.title"))) {
                         break
                     }
                     card.id = resultSet.getLong("c.id");
