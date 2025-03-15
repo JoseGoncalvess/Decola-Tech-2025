@@ -88,7 +88,7 @@ Para clonar o projeto em sua máquina local, siga os passos abaixo:
 6. **Executando o Projeto**:
    - Para executar o projeto, use o comando:
    ```sh
-   ./gradlew run
+    ./gradlew run
    ```
 
 ## Funcionalidades dos Documentos
@@ -129,3 +129,7 @@ Se você deseja contribuir para o projeto, fiqeu avontade para dar sua contribui
 ---
 
 Esta documentação fornece uma visão geral do projeto Borard, suas funcionalidades principais, bibliotecas utilizadas e instruções para clonar e configurar o projeto em uma máquina local.
+
+---
+
+- 👨‍💻 Projeto desencolcido por [José Gonçalves](www.linkedin.com/in/jgoncalvessf)
