@@ -1,0 +1,131 @@
+# Projeto Borard
+
+## Visão Geral
+
+O projeto Borard é um gerenciador de boards que permite a criação, manipulação e visualização de boards e cards. Ele utiliza Kotlin como linguagem de programação principal e MySQL como banco de dados. O projeto também utiliza Liquibase para gerenciamento de migrações de banco de dados.
+
+## Estrutura do Projeto
+
+A estrutura do projeto é organizada da seguinte forma:
+
+```sh
+.gitignore
+build.gradle.kts
+gradle.properties
+gradlew
+gradlew.bat
+settings.gradle.kts
+src/
+   main/
+       kotlin/
+           Main.kt
+           dto/
+           exceptions/
+           persistence/
+           service/
+           ui/
+       resources/
+           liquibase.properties
+           db/
+               changelog/
+   test/
+       kotlin/
+       resources/
+```
+
+## Principais Funcionalidades
+
+- **Criação de Boards**: Permite criar novos boards com colunas personalizadas.
+- **Manipulação de Cards**: Permite criar, mover, bloquear, desbloquear e cancelar cards dentro de um board.
+- **Visualização de Boards e Cards**: Permite visualizar detalhes de boards, colunas e cards.
+
+## Bibliotecas Utilizadas
+
+- **Kotlin**: Linguagem de programação principal.
+- **Liquibase**: Gerenciamento de migrações de banco de dados.
+- **MySQL Connector/J**: Conector JDBC para MySQL.
+- **Lombok**: Geração automática de código boilerplate.
+
+## Clonando o Projeto
+
+Para clonar o projeto em sua máquina local, siga os passos abaixo:
+
+1. **Pré-requisitos**:
+
+   - Java JDK 21
+   - Gradle
+   - MySQL
+
+2. **Clonando o Repositório**:
+
+   ```sh
+   git clone <URL_DO_REPOSITORIO>
+   cd Borard
+   ```
+
+3. **Configurando o Banco de Dados**:
+
+   - Certifique-se de que o MySQL está instalado e em execução.
+   - Crie um banco de dados chamado `board`:
+
+   ```sql
+   CREATE DATABASE board;
+   ```
+
+4. **Configurando o Docker (Opcional)**:
+
+   - Você pode usar o Docker para configurar o MySQL. O Dockerfile está localizado em `src/main/kotlin/persistence/config/doker/Dockerfile`.
+
+5. **Executando as Migrações do Banco de Dados**:
+
+   - Configure as propriedades do banco de dados em `src/main/resources/liquibase.properties`.
+   - Execute as migrações:
+
+   ```sh
+   ./gradlew update
+   ```
+
+6. **Executando o Projeto**:
+   - Para executar o projeto, use o comando:
+   ```sh
+   ./gradlew run
+   ```
+
+## Funcionalidades dos Documentos
+
+### BoardMenu
+
+O arquivo `BoardMenu.kt` contém a implementação do menu de operações para um board específico. As funcionalidades incluem:
+
+- **Criar um card**: Permite criar um novo card no board.
+- **Mover um card**: Permite mover um card para a próxima coluna.
+- **Bloquear um card**: Permite bloquear um card com um motivo específico.
+- **Desbloquear um card**: Permite desbloquear um card com um motivo específico.
+- **Cancelar um card**: Permite mover um card para a coluna de cancelamento.
+- **Ver board**: Permite visualizar o board e suas colunas.
+- **Ver coluna com cards**: Permite visualizar uma coluna específica e seus cards.
+- **Ver card**: Permite visualizar os detalhes de um card específico.
+
+### MainMenu
+
+O arquivo `MainMenu.kt` contém a implementação do menu principal do aplicativo. As funcionalidades incluem:
+
+- **Criar um novo board**: Permite criar um novo board com colunas personalizadas.
+- **Selecionar um board existente**: Permite selecionar um board existente para realizar operações.
+- **Excluir um board**: Permite excluir um board existente.
+- **Exibir boards existentes**: Permite visualizar todos os boards existentes.
+
+## Referências
+
+- [Kotlin](https://kotlinlang.org/)
+- [Liquibase](https://www.liquibase.org/)
+- [MySQL Connector/J](https://dev.mysql.com/downloads/connector/j/)
+- [Lombok](https://projectlombok.org/)
+
+## Contribuindo
+
+Se você deseja contribuir para o projeto, fiqeu avontade para dar sua contribuição e envie um pull request. Ficarei grato por sua ajuda!
+
+---
+
+Esta documentação fornece uma visão geral do projeto Borard, suas funcionalidades principais, bibliotecas utilizadas e instruções para clonar e configurar o projeto em uma máquina local.
