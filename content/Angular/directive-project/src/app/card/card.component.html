@@ -1,0 +1,42 @@
+<h1>My Application</h1>
+<p>card works!</p>
+
+<ul>
+  <li *ngFor="let p of prdutos; let i = index">
+    <button (click)="deletItem(i)">{{i}}</button> {{p}}
+  </li>
+  <button (click)="insertItem()">Clique aqui</button>
+</ul>
+
+<div [ngSwitch]="meuType">
+  <div *ngSwitchCase="'user'">
+    <ul>
+      <li>Editar Perfil</li>
+      <li>Adicionar Cartão</li>
+    </ul>
+  </div>
+  <div *ngSwitchCase="'admin'">
+    <ul>
+      <li>Editar Perfil</li>
+      <li>Adicionar Cartão</li>
+      <li>Gerenciar Usuarios</li>
+    </ul>
+  </div>
+  <div *ngSwitchCase="'superuser'">
+    <ul>
+      <li>Editar Perfil</li>
+      <li>Adicionar Cartão</li>
+      <li>Gerenciar Usuarios</li>
+      <li>Gerenciar Permissões</li>
+    </ul>
+  </div>
+
+  <div *ngSwitchDefault>
+    <ul>
+      <li>Editar Perfil</li>
+      <li>Adicionar Cartão</li>
+    </ul>
+  </div>
+</div>
+
+
