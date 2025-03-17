@@ -1,0 +1,66 @@
+# Documentation For Hooks Learn
+
+**In angular exist 8 hook for life cycle, when is search in cocumentation Oficial -** [Documentation Hooks](https://angular.dev/guide/components/lifecycle)
+
+### Resumidamente
+
+<table>
+    <tbody><tr>
+      <td><strong>Phase</strong></td>
+      <td><strong>Method</strong></td>
+      <td><strong>Summary</strong></td>
+    </tr>
+    <tr>
+      <td>Creation</td>
+      <td><code>constructor</code></td>
+      <td>
+        <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Classes/constructor" target="_blank">
+          Standard JavaScript class constructor
+        </a>. Runs when Angular instantiates the component.
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="7">Change<p>Detection</p></td>
+      <td><code>ngOnInit</code>
+      </td>
+      <td>Runs once after Angular has initialized all the component's inputs.</td>
+    </tr>
+    <tr>
+      <td><code>ngOnChanges</code></td>
+      <td>Runs every time the component's inputs have changed.</td>
+    </tr>
+    <tr>
+      <td><code>ngDoCheck</code></td>
+      <td>Runs every time this component is checked for changes.</td>
+    </tr>
+    <tr>
+      <td><code>ngAfterContentInit</code></td>
+      <td>Runs once after the component's <em>content</em> has been initialized.</td>
+    </tr>
+    <tr>
+      <td><code>ngAfterContentChecked</code></td>
+      <td>Runs every time this component content has been checked for changes.</td>
+    </tr>
+    <tr>
+      <td><code>ngAfterViewInit</code></td>
+      <td>Runs once after the component's <em>view</em> has been initialized.</td>
+    </tr>
+    <tr>
+      <td><code>ngAfterViewChecked</code></td>
+      <td>Runs every time the component's view has been checked for changes.</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Rendering</td>
+      <td><code>afterNextRender</code></td>
+      <td>Runs once the next time that <strong>all</strong> components have been rendered to the DOM.</td>
+    </tr>
+    <tr>
+      <td><code>afterRender</code></td>
+      <td>Runs every time <strong>all</strong> components have been rendered to the DOM.</td>
+    </tr>
+    <tr>
+      <td>Destruction</td>
+      <td><code>ngOnDestroy</code></td>
+      <td>Runs once before the component is destroyed.</td>
+    </tr>
+  </tbody></table>
