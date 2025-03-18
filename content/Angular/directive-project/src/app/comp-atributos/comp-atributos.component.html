@@ -1,0 +1,17 @@
+<p [ngClass]="style">comp-atributos works!</p>
+
+<button (click)="mudou()">MUDOU</button>
+
+<h1 (mouseover)="colorir()" [ngStyle]="{'background':fundo,'color':letras}">Cruso de Angular</h1>
+
+<hr>
+<h1>Lista de Compras</h1>
+<p>Adicionar um Item:</p>
+<input type="text" [(ngModel)] ="item">
+<button (click)="adicionarLista()">ADICIONAR</button>
+<p>{{item}}</p>
+<p>Itens:</p>
+
+<ul>
+  <li *ngFor="let p of lista; let i = index">{{p}}</li>
+</ul>
