@@ -22,10 +22,12 @@
 }
 
 .big-card__description > p > a{
-
+  font-weight: 500;
+  font-family: 'Courier New', Courier, monospace;
   color: gray;
 }
 .big-card__photo > img{
   width: 100%;
   min-width: 600px;
+  border-radius: 5px;
 }
