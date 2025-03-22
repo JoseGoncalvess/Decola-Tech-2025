@@ -15,3 +15,16 @@
 <ul>
   <li *ngFor="let p of lista; let i = index">{{p}}</li>
 </ul>
+
+<hr>
+<ng-template [ngIf]="isAnaleBlock">
+  <a href="#">FINALIZAR COMPRA</a>
+</ng-template>
+
+<ng-template >
+  <a href="#">ADICIONAR AO CARRINHO</a>
+</ng-template>
+
+<hr>
+
+<ng-content select="p"></ng-content>

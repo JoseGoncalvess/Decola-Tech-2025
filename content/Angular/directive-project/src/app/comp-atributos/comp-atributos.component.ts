@@ -12,6 +12,7 @@ export class CompAtributosComponent {
   style: String = "enable";
   fundo: String = "purple";
   letras: String = "white";
+  isAnaleBlock: boolean = true;
 
   item: string = "";
 
