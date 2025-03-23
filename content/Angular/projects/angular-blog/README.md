@@ -1,59 +1,91 @@
-# AngularBlog
+# Angular Blog
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.0.
+Este projeto foi desenvolvido como parte de um estudo para validar conhecimentos em Angular. Ele consiste em um blog simples, com funcionalidades básicas e uma estrutura modularizada para facilitar o entendimento e a manutenção do código.
 
-## Development server
+## Estrutura do Projeto
 
-To start a local development server, run:
+A estrutura do projeto está organizada da seguinte forma:
 
-```bash
-ng serve
+```
+src/ ├── index.html
+     ├── main.ts
+     ├── main.server.ts
+     ├── server.ts
+     ├── styles.css
+     ├── app/
+          │ ├── app.component.ts
+          │ ├── app.component.html
+          │ ├── app.component.css
+          │ ├── app.config.ts
+          │ ├── app.config.server.ts
+          │ ├── app.routes.ts
+          │ ├── app.routes.server.ts
+          │ ├── components/
+          │ ├── pages/
+          ├── data/
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### Principais Arquivos e Diretórios
 
-## Code scaffolding
+- **`app/`**: Contém os principais arquivos do aplicativo Angular, incluindo o componente raiz (`app.component`) e as configurações de rotas e servidor.
+- **`components/`**: Diretório destinado a componentes reutilizáveis.
+- **`pages/`**: Diretório destinado às páginas principais do blog.
+- **`data/`**: Diretório reservado para dados estáticos ou mockados.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Funcionalidades
 
-```bash
-ng generate component component-name
-```
+O projeto inclui as seguintes funcionalidades:
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+1. **Exibição de Postagens**: Uma página principal que lista postagens do blog.
+2. **Navegação**: Rotas configuradas para navegar entre diferentes páginas.
+3. **Estilização**: Estilos básicos definidos no arquivo `styles.css`.
+4. **Configuração de Servidor**: Arquivos como `server.ts` e `main.server.ts` para suporte a renderização no servidor (SSR).
 
-```bash
-ng generate --help
-```
+## Componentes
 
-## Building
+Os principais componentes do projeto incluem:
 
-To build the project run:
+- **`AppComponent`**: Componente raiz que serve como ponto de entrada para o aplicativo.
+- **Componentes Reutilizáveis**: Localizados no diretório `components/`, como botões, cabeçalhos, e rodapés.
+- **Páginas**: Localizadas no diretório `pages/`, como a página inicial e páginas de detalhes de postagens.
 
-```bash
-ng build
-```
+## Desenvolvimento
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Este projeto foi criado utilizando o Angular CLI e segue as melhores práticas recomendadas para desenvolvimento Angular. Abaixo estão algumas ferramentas e tecnologias utilizadas:
 
-## Running unit tests
+- **Angular**: Framework principal para desenvolvimento do front-end.
+- **TypeScript**: Linguagem utilizada para desenvolvimento.
+- **CSS**: Para estilização.
+- **Node.js**: Para suporte ao servidor e renderização no servidor (SSR).
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## Como Executar o Projeto
 
-```bash
-ng test
-```
+1. Clone o repositório:
 
-## Running end-to-end tests
+   ```bash
+   git clone <url-do-repositorio>
+   ```
 
-For end-to-end (e2e) testing, run:
+2. Instale as dependências:
 
-```bash
-ng e2e
-```
+   ```js
+     npm install
+   ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+3. Execute o servidor de desenvolvimento:
 
-## Additional Resources
+   ```js
+   ng serve
+   ```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+4. Acesse o aplicativo no navegador:
+
+   ```js
+     http://localhost:4200
+   ```
+
+- Demais instruções no documento **Instructions.md**, nele podera confgurar o ambiente para rodar está aplicaçõa corretamente.
+
+### Conclusão
+
+Este projeto foi desenvolvido com o objetivo de consolidar conhecimentos em Angular e práticas de desenvolvimento front-end. Ele pode ser expandido com novas funcionalidades e componentes para atender a diferentes necessidades.
