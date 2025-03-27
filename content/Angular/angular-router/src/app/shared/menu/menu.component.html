@@ -1,0 +1,10 @@
+<div>
+  <ul>
+    <!-- routerLink MELORA A PERFORMASSE DO APP SEM PRECISAR RECARREGAR A PÁGINA -->
+    <li><a [routerLink]="['/']" routerLinkActive="activeted" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+    <li><a routerLink="/portifolio" routerLinkActive="activeted" [routerLinkActiveOptions]="{exact: true}">Portifoli</a>
+    </li>
+    <li><a routerLink="portifolioid/3?{name=anny&idade=25}" routerLinkActive="activeted" [routerLinkActiveOptions]="{exact: true}">Portifoli ID</a>
+    </li>
+  </ul>
+</div>
