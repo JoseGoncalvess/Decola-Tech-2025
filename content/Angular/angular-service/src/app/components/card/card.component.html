@@ -1,15 +1,24 @@
 <div class="search__container">
-  <input #pokemonName type="text" placeholder="Name do pokemon">
+  <label for="pokemonName" id="pokemonName">Name ou numero do pokemon</label>
+  <input #pokemonName type="text" placeholder="Onix">
   <button type="submit" (click)="getPokemon(pokemonName.value)">Pesquisar </button>
 </div>
 <div class="card">
   <div class="card__title">
-    <h3>{{pokemon?.name}}</h3>
+    <!-- ESSE SINAL DE | SIGNIFICA QUES ESTOU USANOD PIPE DO ANGULAR
+     PARA FAZER UMA TARSNFORMAÇÂO NOS DADOS A EQUERDA
+    A DOCUMENTAÇÂO TEM MUITOS OUTROS PIPES DOC: "https://angular.dev/guide/templates/pipes" ou ng doc pipe
+    -->
+    <h3>{{pokemon?.name!! | pokeName : pokemon?.id!!}}</h3>
   </div>
   <div class="card__body">
     <img src={{pokeImg}} alt="Pokemon" srcset="">
   </div>
   <div class="card__stats">
-    <span [ngStyle]="{'background-color': getBackgroundColor(tp.type.name)}" *ngFor="let tp of pokemon?.types " class="card__stats__type" > {{tp.type.name}} </span>
+    <span [ngStyle]="{'background-color': getBackgroundColor(tp.type.name)}" *ngFor="let tp of pokemon?.types " class="card__stats__type" >
+
+      <!-- CONSIGO PAASSAR PARAMETROS PARA OS PIPES FAZENOD USO DO : APOS O NOME DO PIPE -->
+      {{tp.type.name | firstUpcase : tp.slot}}
+      </span>
   </div>
 </div>

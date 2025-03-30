@@ -3,10 +3,12 @@ import { CommonModule } from '@angular/common';
 import { PokemonService } from "../../services/pokemon.service";
 import { pokemonData } from '../../models/pokemData';
 import { FormsModule } from "@angular/forms";
+import { FirstUpcasePipe } from "../../pipes/first-upcase.pipe";
+import { PokeNamePipe } from "../../pipes/poke-name.pipe";
 
 @Component({
   selector: 'app-card',
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, FirstUpcasePipe, PokeNamePipe],
   templateUrl: './card.component.html',
   styleUrl: './card.component.css'
 })
@@ -40,7 +42,7 @@ export class CardComponent implements OnInit {
         {
           next: (ress) => {
             this.pokemon = {
-              name: ress.name.toUpperCase(),
+              name: ress.name,
               id: ress.id,
               sprites: ress.sprites,
               types: ress.types
@@ -72,6 +74,12 @@ export class CardComponent implements OnInit {
         return "gray"
       case "fighting":
         return "#7c400f"
+
+      case "electric":
+        return "#ffd000"
+
+        case "ice":
+        return "#00b7ff"
 
       case "psychic":
         return "pink"
