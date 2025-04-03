@@ -11,8 +11,14 @@
   align-items: center;
 }
 
+.quizz__logo > img{
+  max-width: 80%;
+}
+
 .quizz__logo > h3 {
   margin-top: 20px;
+  font-size: 22px;
+  margin-bottom: 20px;
 }
 
 .quizz__questions{
@@ -41,7 +47,7 @@
   background-color: transparent;
   border-radius: 8px;
   border: solid 1px #18ab29;
-  width: 50%;
+  width: 40%;
   display: inline-block;
   cursor: pointer;
   color: #fff;
@@ -50,10 +56,13 @@
   padding: 16px 31px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #2f6627;
+  margin-bottom: 5px;
+  margin-left: 5px;
 }
 
 .btn__options:hover{
 background-color: #5cbf2a;
+
 }
 
 .btn__options:active{
@@ -72,3 +81,4 @@ background-color: #5cbf2a;
   align-items: center;
   justify-content: center;
 }
+
