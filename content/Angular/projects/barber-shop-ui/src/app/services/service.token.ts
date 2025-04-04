@@ -1,9 +1,12 @@
 import { InjectionToken } from "@angular/core";
-import { IclientService } from "./api-client/clients/iclients.service";
+import { IClientService } from "./api-client/clients/iclients.service";
+import { ISnackbarManagerService } from "./isnackbar-manager.service";
 
 export const  SERVICE_TOKEN = {
   HTTP: {
-    CLIENT: new InjectionToken<IclientService>("SERVICE_TOKEN.HTTP.CLIENT")
+    CLIENT: new InjectionToken<IClientService>("SERVICE_TOKEN.HTTP.CLIENT")
     // SCHEDULE: new InjectionToken<IclientService>("SERVICE_TOKEN.HTTP.SCHEDULE")
-  }
+  },
+
+  SNACKBAR: new InjectionToken<ISnackbarManagerService>('SERVICES_TOKEN.SNACKBAR'),
 }

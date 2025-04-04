@@ -1,7 +1,7 @@
 import { Observable } from "rxjs";
 import { DetailClientResponse, ListClientResponse, SaveClientRequest, SaveClientResponse, UpdateClientResponse,   } from "./client.models";
 
-export interface ICLientService{
+export interface IClientService{
 save(request: SaveClientRequest): Observable<SaveClientResponse>;
 update(id: number, request: SaveClientRequest): Observable<UpdateClientResponse>;
 delete ( id: number, request: SaveClientRequest): Observable<void>;

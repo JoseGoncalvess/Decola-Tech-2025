@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { IclientService } from './iclients.service';
+import { IClientService } from './iclients.service';
 import { Observable } from 'rxjs';
 import { environment } from '../../../../environment/environment';
 import { SaveClientRequest, SaveClientResponse, UpdateClientResponse, ListClientResponse, DetailClientResponse } from './client.models';
@@ -8,7 +8,7 @@ import { SaveClientRequest, SaveClientResponse, UpdateClientResponse, ListClient
 @Injectable({
   providedIn: 'root'
 })
-export class ClientsService implements IclientService {
+export class ClientsService implements IClientService {
 
   private baseUrl = environment.apiUrl
 

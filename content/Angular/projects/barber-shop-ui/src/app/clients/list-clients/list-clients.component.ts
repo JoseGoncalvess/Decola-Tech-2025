@@ -1,7 +1,7 @@
 import { Component, Inject } from '@angular/core';
 import { SERVICE_TOKEN } from '../../services/service.token';
 import { ClientsService } from '../../services/api-client/clients/clients.service';
-import { IclientService } from '../../services/api-client/clients/iclients.service';
+import { IClientService } from '../../services/api-client/clients/iclients.service';
 
 @Component({
   selector: 'app-list-clients',
@@ -13,7 +13,7 @@ import { IclientService } from '../../services/api-client/clients/iclients.servi
     }]
 })
 export class ListClientsComponent {
-  constructor (@Inject(SERVICE_TOKEN.HTTP.CLIENT) private readonly: IclientService) {
+  constructor (@Inject(SERVICE_TOKEN.HTTP.CLIENT) private readonly: IClientService) {
 
   }
 }
