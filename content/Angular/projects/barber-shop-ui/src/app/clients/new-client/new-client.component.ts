@@ -1,4 +1,4 @@
-import { Component, Inject } from '@angular/core';
+import { Component, Inject, OnDestroy } from '@angular/core';
 import { IClientService } from '../../services/api-client/clients/iclients.service';
 import { SERVICE_TOKEN } from '../../services/service.token';
 import { ClientsService } from '../../services/api-client/clients/clients.service';
@@ -19,7 +19,7 @@ import { ISnackbarManagerService } from '../../services/isnackbar-manager.servic
     {provide: SERVICE_TOKEN.HTTP.CLIENT, useClass: ClientsService},
     { provide: SERVICE_TOKEN.SNACKBAR, useClass: SnackbarManagerService }]
 })
-export class NewClientComponent {
+export class NewClientComponent implements OnDestroy {
   private httpSubscription?: Subscription
 
 
@@ -40,9 +40,8 @@ export class NewClientComponent {
   onSubmitClient(value: ClientModelForm) {
     const { id, ...request } = value
     this.httpSubscription = this.httpService.save(request).subscribe(_ => {
-      this.snackBarManager.show('Usuário Foi Cadastrado Com Sucesso !')
+      this.snackBarManager.show('Usuário cadastrado com sucesso')
       this.router.navigate(['clients/list'])
     })
-
   }
 }

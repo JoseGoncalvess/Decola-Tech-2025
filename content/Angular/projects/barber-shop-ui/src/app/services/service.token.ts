@@ -4,9 +4,8 @@ import { ISnackbarManagerService } from "./isnackbar-manager.service";
 
 export const  SERVICE_TOKEN = {
   HTTP: {
-    CLIENT: new InjectionToken<IClientService>("SERVICE_TOKEN.HTTP.CLIENT")
-    // SCHEDULE: new InjectionToken<IclientService>("SERVICE_TOKEN.HTTP.SCHEDULE")
-  },
-
-  SNACKBAR: new InjectionToken<ISnackbarManagerService>('SERVICES_TOKEN.SNACKBAR'),
+    CLIENT: new InjectionToken<IClientService>('SERVICES_TOKEN.HTTP.CLIENT'),
+    // SCHEDULE: new InjectionToken<IScheduleService>('SERVICES_TOKEN.HTTP.SCHEDULE'),
+},
+SNACKBAR: new InjectionToken<ISnackbarManagerService>('SERVICES_TOKEN.SNACKBAR'),
 }
