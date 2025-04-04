@@ -30,6 +30,7 @@ export interface ListClientResponse {
 }
 
 export interface DetailClientResponse{
+  id: number
   name: string
   email: string
   phone: string
