@@ -44,4 +44,6 @@ export class NewClientComponent implements OnDestroy {
       this.router.navigate(['clients/list'])
     })
   }
+
+
 }
