@@ -1,4 +1,4 @@
-package br.com.DecolaTech.barber_shop_api.repository.impl;
+package br.com.DecolaTech.barber_shop_api.repository;
 
 import br.com.DecolaTech.barber_shop_api.models.entity.ClientEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
