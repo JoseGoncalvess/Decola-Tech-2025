@@ -8,4 +8,4 @@ RUN mkdir $INSTALL_PATH
 
 WORKDIR $INSTALL_PATH
 
-COPY . .
+COPY ../ .
