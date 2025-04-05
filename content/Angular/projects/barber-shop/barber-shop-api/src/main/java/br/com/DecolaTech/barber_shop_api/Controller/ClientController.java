@@ -1,2 +1,7 @@
-package br.com.DecolaTech.barber_shop_api.Controller;public class ClientController {
+package br.com.DecolaTech.barber_shop_api.Controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class ClientController {
 }

@@ -1,18 +1,17 @@
-package br.com.DecolaTech.barber_shop_api.Controller.request;
+package br.com.DecolaTech.barber_shop_api.Controller.response;
+
+
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import jakarta.validation.constraints.NotNull;
 
 import java.time.OffsetDateTime;
-
-public record SaveScheduleRequest(
-        @NotNull
+public record SaveScheduleResponse(
+        @JsonProperty("id")
+        Long id,
         @JsonProperty("startAt")
         OffsetDateTime startAt,
-        @NotNull
         @JsonProperty("endAt")
         OffsetDateTime endAt,
-        @NotNull
         @JsonProperty("clientId")
         Long clientId
 ) {}
