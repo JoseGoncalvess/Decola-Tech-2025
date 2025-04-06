@@ -1,0 +1,15 @@
+## PROPOSTA
+Usando 3 servilos o azure para criar uma pesusia baseada em idexador onde consigo por meio de AI search resultado smais coeos sobre determiandos dados que estão presentes e uma diretorio
+arquivos esses que para teste foram crados baseados e avaliações de cafe.
+
+## Serviços ultilizados 
+- AI search
+- AcontStorage
+- Azure Ai servize
+
+#Aprendiado sobre:
+
+Essa aplicação pode se ruma facilitador para uma aplicação de extração de conhecimento ou uma pesquisa mais acertiva baseada num diretorio
+que pode ser empresarial ou ate mesmo pessoal.
+
+inumeras oportunidades d eimplemnetação, que vai ditar o preço sera os cecursos aplicados aestrutura.
