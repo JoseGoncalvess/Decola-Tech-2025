@@ -1,0 +1,1942 @@
+[
+    {
+        "Id": "ccd3ff7841014cecabe8af2482b8e17f",
+        "RecognitionStatus": 0,
+        "Offset": 3900000,
+        "Duration": 59200000,
+        "Channel": 0,
+        "DisplayText": "Você tem brio. Sabe o que é brio? Eu dizer, malandro, você é tosquinho, você não entende.",
+        "NBest": [
+            {
+                "Confidence": 0.8359563,
+                "Lexical": "você tem brio sabe o que é brio eu dizer malandro você é tosquinho você não entende",
+                "ITN": "você tem brio sabe o que é brio eu dizer malandro você é tosquinho você não entende",
+                "MaskedITN": "você tem brio sabe o que é brio eu dizer malandro você é tosquinho você não entende",
+                "Display": "Você tem brio. Sabe o que é brio? Eu dizer, malandro, você é tosquinho, você não entende.",
+                "Words": [
+                    {
+                        "Word": "você",
+                        "Offset": 3900000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "tem",
+                        "Offset": 5900000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "brio",
+                        "Offset": 7900000,
+                        "Duration": 5600000
+                    },
+                    {
+                        "Word": "sabe",
+                        "Offset": 13500000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "o",
+                        "Offset": 15900000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "que",
+                        "Offset": 16700000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "é",
+                        "Offset": 17500000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "brio",
+                        "Offset": 17900000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "eu",
+                        "Offset": 20700000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "dizer",
+                        "Offset": 21900000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "malandro",
+                        "Offset": 30300000,
+                        "Duration": 6800000
+                    },
+                    {
+                        "Word": "você",
+                        "Offset": 37500000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "é",
+                        "Offset": 40700000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "tosquinho",
+                        "Offset": 41100000,
+                        "Duration": 8800000
+                    },
+                    {
+                        "Word": "você",
+                        "Offset": 53100000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "não",
+                        "Offset": 55100000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "entende",
+                        "Offset": 57100000,
+                        "Duration": 6000000
+                    }
+                ]
+            },
+            {
+                "Confidence": 0.8359563,
+                "Lexical": "você tem brio sabe o que é brio eu dizer malandro você é tosquinho você não entende",
+                "ITN": "você tem brio sabe o que é brio eu dizer malandro você é tosquinho você não entende",
+                "MaskedITN": "você tem brio sabe o que é brio eu dizer malandro você é tosquinho você não entende",
+                "Display": "você tem brio sabe o que é brio eu dizer malandro você é tosquinho você não entende",
+                "Words": [
+                    {
+                        "Word": "você",
+                        "Offset": 3900000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "tem",
+                        "Offset": 5900000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "brio",
+                        "Offset": 7900000,
+                        "Duration": 5600000
+                    },
+                    {
+                        "Word": "sabe",
+                        "Offset": 13500000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "o",
+                        "Offset": 15900000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "que",
+                        "Offset": 16700000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "é",
+                        "Offset": 17500000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "brio",
+                        "Offset": 17900000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "eu",
+                        "Offset": 20700000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "dizer",
+                        "Offset": 21900000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "malandro",
+                        "Offset": 30300000,
+                        "Duration": 6800000
+                    },
+                    {
+                        "Word": "você",
+                        "Offset": 37500000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "é",
+                        "Offset": 40700000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "tosquinho",
+                        "Offset": 41100000,
+                        "Duration": 8800000
+                    },
+                    {
+                        "Word": "você",
+                        "Offset": 53100000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "não",
+                        "Offset": 55100000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "entende",
+                        "Offset": 57100000,
+                        "Duration": 6800000
+                    }
+                ]
+            },
+            {
+                "Confidence": 0.8359563,
+                "Lexical": "você tem brio sabe o que é brio eu dizer malandro você é tosquinho você não entende",
+                "ITN": "você tem brio sabe o que é brio eu dizer malandro você é tosquinho você não entende",
+                "MaskedITN": "você tem brio sabe o que é brio eu dizer malandro você é tosquinho você não entende",
+                "Display": "você tem brio sabe o que é brio eu dizer malandro você é tosquinho você não entende",
+                "Words": [
+                    {
+                        "Word": "você",
+                        "Offset": 3900000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "tem",
+                        "Offset": 5900000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "brio",
+                        "Offset": 7900000,
+                        "Duration": 5600000
+                    },
+                    {
+                        "Word": "sabe",
+                        "Offset": 13500000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "o",
+                        "Offset": 15900000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "que",
+                        "Offset": 16700000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "é",
+                        "Offset": 17500000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "brio",
+                        "Offset": 17900000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "eu",
+                        "Offset": 20700000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "dizer",
+                        "Offset": 21900000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "malandro",
+                        "Offset": 30300000,
+                        "Duration": 6800000
+                    },
+                    {
+                        "Word": "você",
+                        "Offset": 37500000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "é",
+                        "Offset": 40700000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "tosquinho",
+                        "Offset": 41100000,
+                        "Duration": 8800000
+                    },
+                    {
+                        "Word": "você",
+                        "Offset": 53100000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "não",
+                        "Offset": 55100000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "entende",
+                        "Offset": 57100000,
+                        "Duration": 6800000
+                    }
+                ]
+            },
+            {
+                "Confidence": 0.8359563,
+                "Lexical": "você tem brio sabe o que é brio eu dizer malandro você é tosquinho você não entende",
+                "ITN": "você tem brio sabe o que é brio eu dizer malandro você é tosquinho você não entende",
+                "MaskedITN": "você tem brio sabe o que é brio eu dizer malandro você é tosquinho você não entende",
+                "Display": "você tem brio sabe o que é brio eu dizer malandro você é tosquinho você não entende",
+                "Words": [
+                    {
+                        "Word": "você",
+                        "Offset": 3900000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "tem",
+                        "Offset": 5900000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "brio",
+                        "Offset": 7900000,
+                        "Duration": 5600000
+                    },
+                    {
+                        "Word": "sabe",
+                        "Offset": 13500000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "o",
+                        "Offset": 15900000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "que",
+                        "Offset": 16700000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "é",
+                        "Offset": 17500000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "brio",
+                        "Offset": 17900000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "eu",
+                        "Offset": 20700000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "dizer",
+                        "Offset": 21900000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "malandro",
+                        "Offset": 30300000,
+                        "Duration": 6800000
+                    },
+                    {
+                        "Word": "você",
+                        "Offset": 37500000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "é",
+                        "Offset": 40700000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "tosquinho",
+                        "Offset": 41100000,
+                        "Duration": 8800000
+                    },
+                    {
+                        "Word": "você",
+                        "Offset": 53100000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "não",
+                        "Offset": 55100000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "entende",
+                        "Offset": 57100000,
+                        "Duration": 6800000
+                    }
+                ]
+            },
+            {
+                "Confidence": 0.8359563,
+                "Lexical": "você tem brio sabe o que é brio eu dizer malandro você é tosquinho você não entende",
+                "ITN": "você tem brio sabe o que é brio eu dizer malandro você é tosquinho você não entende",
+                "MaskedITN": "você tem brio sabe o que é brio eu dizer malandro você é tosquinho você não entende",
+                "Display": "você tem brio sabe o que é brio eu dizer malandro você é tosquinho você não entende",
+                "Words": [
+                    {
+                        "Word": "você",
+                        "Offset": 3900000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "tem",
+                        "Offset": 5900000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "brio",
+                        "Offset": 7900000,
+                        "Duration": 5600000
+                    },
+                    {
+                        "Word": "sabe",
+                        "Offset": 13500000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "o",
+                        "Offset": 15900000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "que",
+                        "Offset": 16700000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "é",
+                        "Offset": 17500000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "brio",
+                        "Offset": 17900000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "eu",
+                        "Offset": 20700000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "dizer",
+                        "Offset": 21900000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "malandro",
+                        "Offset": 30300000,
+                        "Duration": 6800000
+                    },
+                    {
+                        "Word": "você",
+                        "Offset": 37500000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "é",
+                        "Offset": 40700000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "tosquinho",
+                        "Offset": 41100000,
+                        "Duration": 8800000
+                    },
+                    {
+                        "Word": "você",
+                        "Offset": 53100000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "não",
+                        "Offset": 55100000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "entende",
+                        "Offset": 57100000,
+                        "Duration": 6800000
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Id": "58c92df016fc4c3f8b6a75693efce1a8",
+        "RecognitionStatus": 0,
+        "Offset": 83500000,
+        "Duration": 6000000,
+        "Channel": 0,
+        "DisplayText": "Nossa.",
+        "NBest": [
+            {
+                "Confidence": 0.64747894,
+                "Lexical": "nossa",
+                "ITN": "nossa",
+                "MaskedITN": "nossa",
+                "Display": "Nossa.",
+                "Words": [
+                    {
+                        "Word": "nossa",
+                        "Offset": 83500000,
+                        "Duration": 6000000
+                    }
+                ]
+            },
+            {
+                "Confidence": 0.64747894,
+                "Lexical": "nossa",
+                "ITN": "nossa",
+                "MaskedITN": "nossa",
+                "Display": "nossa",
+                "Words": [
+                    {
+                        "Word": "nossa",
+                        "Offset": 83500000,
+                        "Duration": 6000000
+                    }
+                ]
+            },
+            {
+                "Confidence": 0.64747894,
+                "Lexical": "nossa",
+                "ITN": "nossa",
+                "MaskedITN": "nossa",
+                "Display": "nossa",
+                "Words": [
+                    {
+                        "Word": "nossa",
+                        "Offset": 83500000,
+                        "Duration": 6000000
+                    }
+                ]
+            },
+            {
+                "Confidence": 0.64747894,
+                "Lexical": "nossa",
+                "ITN": "nossa",
+                "MaskedITN": "nossa",
+                "Display": "nossa",
+                "Words": [
+                    {
+                        "Word": "nossa",
+                        "Offset": 83500000,
+                        "Duration": 6000000
+                    }
+                ]
+            },
+            {
+                "Confidence": 0.64747894,
+                "Lexical": "nossa",
+                "ITN": "nossa",
+                "MaskedITN": "nossa",
+                "Display": "nossa",
+                "Words": [
+                    {
+                        "Word": "nossa",
+                        "Offset": 83500000,
+                        "Duration": 6000000
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Id": "26d6c9ab30f0401a8809ac9eafb27dc8",
+        "RecognitionStatus": 0,
+        "Offset": 101500000,
+        "Duration": 196800000,
+        "Channel": 0,
+        "DisplayText": "Nossa, eu volto para casa, eu vou. É a primeira coisa que eu faço. Nem xixi, velho, porque como pode um cara escrever uma coisa que eu não entenda? Não tem como eu vou ler aquela ***** até entender isso é brio, senão o nego **** na sua cabeça e você não reage.",
+        "NBest": [
+            {
+                "Confidence": 0.78126013,
+                "Lexical": "nossa eu volto para casa eu vou é a primeira coisa que eu faço nem xixi velho porque como pode um cara escrever uma coisa que eu não entenda não tem como eu vou ler aquela merda até entender isso é brio senão o nego caga na sua cabeça e você não reage",
+                "ITN": "nossa eu volto para casa eu vou é a primeira coisa que eu faço nem xixi velho porque como pode um cara escrever uma coisa que eu não entenda não tem como eu vou ler aquela merda até entender isso é brio senão o nego caga na sua cabeça e você não reage",
+                "MaskedITN": "nossa eu volto para casa eu vou é a primeira coisa que eu faço nem xixi velho porque como pode um cara escrever uma coisa que eu não entenda não tem como eu vou ler aquela ***** até entender isso é brio senão o nego **** na sua cabeça e você não reage",
+                "Display": "Nossa, eu volto para casa, eu vou. É a primeira coisa que eu faço. Nem xixi, velho, porque como pode um cara escrever uma coisa que eu não entenda? Não tem como eu vou ler aquela ***** até entender isso é brio, senão o nego **** na sua cabeça e você não reage.",
+                "Words": [
+                    {
+                        "Word": "nossa",
+                        "Offset": 101500000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "eu",
+                        "Offset": 105900000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "volto",
+                        "Offset": 107900000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "para",
+                        "Offset": 111900000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "casa",
+                        "Offset": 113900000,
+                        "Duration": 6400000
+                    },
+                    {
+                        "Word": "eu",
+                        "Offset": 121500000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "vou",
+                        "Offset": 123500000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "é",
+                        "Offset": 126300000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "a",
+                        "Offset": 127500000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "primeira",
+                        "Offset": 127900000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "coisa",
+                        "Offset": 131500000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "que",
+                        "Offset": 135500000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "eu",
+                        "Offset": 136300000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "faço",
+                        "Offset": 137500000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "nem",
+                        "Offset": 142700000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "xixi",
+                        "Offset": 144700000,
+                        "Duration": 6800000
+                    },
+                    {
+                        "Word": "velho",
+                        "Offset": 151500000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "porque",
+                        "Offset": 158300000,
+                        "Duration": 5600000
+                    },
+                    {
+                        "Word": "como",
+                        "Offset": 165100000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "pode",
+                        "Offset": 168300000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "um",
+                        "Offset": 172300000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "cara",
+                        "Offset": 173500000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "escrever",
+                        "Offset": 176300000,
+                        "Duration": 5200000
+                    },
+                    {
+                        "Word": "uma",
+                        "Offset": 181500000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "coisa",
+                        "Offset": 183100000,
+                        "Duration": 6400000
+                    },
+                    {
+                        "Word": "que",
+                        "Offset": 191500000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "eu",
+                        "Offset": 193100000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "não",
+                        "Offset": 194700000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "entenda",
+                        "Offset": 197900000,
+                        "Duration": 7600000
+                    },
+                    {
+                        "Word": "não",
+                        "Offset": 206700000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "tem",
+                        "Offset": 208300000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "como",
+                        "Offset": 210300000,
+                        "Duration": 6800000
+                    },
+                    {
+                        "Word": "eu",
+                        "Offset": 217500000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "vou",
+                        "Offset": 219100000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "ler",
+                        "Offset": 220700000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "aquela",
+                        "Offset": 222300000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "merda",
+                        "Offset": 225500000,
+                        "Duration": 5600000
+                    },
+                    {
+                        "Word": "até",
+                        "Offset": 232700000,
+                        "Duration": 10000000
+                    },
+                    {
+                        "Word": "entender",
+                        "Offset": 242700000,
+                        "Duration": 10000000
+                    },
+                    {
+                        "Word": "isso",
+                        "Offset": 253900000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "é",
+                        "Offset": 256700000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "brio",
+                        "Offset": 257100000,
+                        "Duration": 8000000
+                    },
+                    {
+                        "Word": "senão",
+                        "Offset": 265100000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "o",
+                        "Offset": 270700000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "nego",
+                        "Offset": 271500000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "caga",
+                        "Offset": 274700000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "na",
+                        "Offset": 277900000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "sua",
+                        "Offset": 279100000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "cabeça",
+                        "Offset": 281100000,
+                        "Duration": 6400000
+                    },
+                    {
+                        "Word": "e",
+                        "Offset": 289900000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "você",
+                        "Offset": 291100000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "não",
+                        "Offset": 293500000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "reage",
+                        "Offset": 295900000,
+                        "Duration": 2400000
+                    }
+                ]
+            },
+            {
+                "Confidence": 0.78126013,
+                "Lexical": "nossa eu volto para casa eu vou é a primeira coisa que eu faço nem xixi velho porque como pode um cara escrever uma coisa que eu não entenda não tem como eu vou ler aquela merda até entender isso é brio senão o nego caga na sua cabeça e você não reage",
+                "ITN": "nossa eu volto para casa eu vou é a primeira coisa que eu faço nem xixi velho porque como pode um cara escrever uma coisa que eu não entenda não tem como eu vou ler aquela merda até entender isso é brio senão o nego caga na sua cabeça e você não reage",
+                "MaskedITN": "nossa eu volto para casa eu vou é a primeira coisa que eu faço nem xixi velho porque como pode um cara escrever uma coisa que eu não entenda não tem como eu vou ler aquela merda até entender isso é brio senão o nego caga na sua cabeça e você não reage",
+                "Display": "nossa eu volto para casa eu vou é a primeira coisa que eu faço nem xixi velho porque como pode um cara escrever uma coisa que eu não entenda não tem como eu vou ler aquela merda até entender isso é brio senão o nego caga na sua cabeça e você não reage",
+                "Words": [
+                    {
+                        "Word": "nossa",
+                        "Offset": 101500000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "eu",
+                        "Offset": 105900000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "volto",
+                        "Offset": 107900000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "para",
+                        "Offset": 111900000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "casa",
+                        "Offset": 113900000,
+                        "Duration": 6400000
+                    },
+                    {
+                        "Word": "eu",
+                        "Offset": 121500000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "vou",
+                        "Offset": 123500000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "é",
+                        "Offset": 126300000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "a",
+                        "Offset": 127500000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "primeira",
+                        "Offset": 127900000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "coisa",
+                        "Offset": 131500000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "que",
+                        "Offset": 135500000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "eu",
+                        "Offset": 136300000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "faço",
+                        "Offset": 137500000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "nem",
+                        "Offset": 142700000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "xixi",
+                        "Offset": 144700000,
+                        "Duration": 6800000
+                    },
+                    {
+                        "Word": "velho",
+                        "Offset": 151500000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "porque",
+                        "Offset": 158300000,
+                        "Duration": 5600000
+                    },
+                    {
+                        "Word": "como",
+                        "Offset": 165100000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "pode",
+                        "Offset": 168300000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "um",
+                        "Offset": 172300000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "cara",
+                        "Offset": 173500000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "escrever",
+                        "Offset": 176300000,
+                        "Duration": 5200000
+                    },
+                    {
+                        "Word": "uma",
+                        "Offset": 181500000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "coisa",
+                        "Offset": 183100000,
+                        "Duration": 6400000
+                    },
+                    {
+                        "Word": "que",
+                        "Offset": 191500000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "eu",
+                        "Offset": 193100000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "não",
+                        "Offset": 194700000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "entenda",
+                        "Offset": 197900000,
+                        "Duration": 7600000
+                    },
+                    {
+                        "Word": "não",
+                        "Offset": 206700000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "tem",
+                        "Offset": 208300000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "como",
+                        "Offset": 210300000,
+                        "Duration": 6800000
+                    },
+                    {
+                        "Word": "eu",
+                        "Offset": 217500000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "vou",
+                        "Offset": 219100000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "ler",
+                        "Offset": 220700000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "aquela",
+                        "Offset": 222300000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "merda",
+                        "Offset": 225500000,
+                        "Duration": 5600000
+                    },
+                    {
+                        "Word": "até",
+                        "Offset": 232700000,
+                        "Duration": 10000000
+                    },
+                    {
+                        "Word": "entender",
+                        "Offset": 242700000,
+                        "Duration": 10000000
+                    },
+                    {
+                        "Word": "isso",
+                        "Offset": 253900000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "é",
+                        "Offset": 256700000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "brio",
+                        "Offset": 257100000,
+                        "Duration": 8000000
+                    },
+                    {
+                        "Word": "senão",
+                        "Offset": 265100000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "o",
+                        "Offset": 270700000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "nego",
+                        "Offset": 271500000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "caga",
+                        "Offset": 274700000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "na",
+                        "Offset": 277900000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "sua",
+                        "Offset": 279100000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "cabeça",
+                        "Offset": 281100000,
+                        "Duration": 6400000
+                    },
+                    {
+                        "Word": "e",
+                        "Offset": 289900000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "você",
+                        "Offset": 291100000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "não",
+                        "Offset": 293500000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "reage",
+                        "Offset": 295900000,
+                        "Duration": 2400000
+                    }
+                ]
+            },
+            {
+                "Confidence": 0.78126013,
+                "Lexical": "nossa eu volto para casa eu vou é a primeira coisa que eu faço nem xixi velho porque como pode um cara escrever uma coisa que eu não entenda não tem como eu vou ler aquela merda até entender isso é brio senão o nego caga na sua cabeça e você não reage",
+                "ITN": "nossa eu volto para casa eu vou é a primeira coisa que eu faço nem xixi velho porque como pode um cara escrever uma coisa que eu não entenda não tem como eu vou ler aquela merda até entender isso é brio senão o nego caga na sua cabeça e você não reage",
+                "MaskedITN": "nossa eu volto para casa eu vou é a primeira coisa que eu faço nem xixi velho porque como pode um cara escrever uma coisa que eu não entenda não tem como eu vou ler aquela merda até entender isso é brio senão o nego caga na sua cabeça e você não reage",
+                "Display": "nossa eu volto para casa eu vou é a primeira coisa que eu faço nem xixi velho porque como pode um cara escrever uma coisa que eu não entenda não tem como eu vou ler aquela merda até entender isso é brio senão o nego caga na sua cabeça e você não reage",
+                "Words": [
+                    {
+                        "Word": "nossa",
+                        "Offset": 101500000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "eu",
+                        "Offset": 105900000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "volto",
+                        "Offset": 107900000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "para",
+                        "Offset": 111900000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "casa",
+                        "Offset": 113900000,
+                        "Duration": 6400000
+                    },
+                    {
+                        "Word": "eu",
+                        "Offset": 121500000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "vou",
+                        "Offset": 123500000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "é",
+                        "Offset": 126300000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "a",
+                        "Offset": 127500000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "primeira",
+                        "Offset": 127900000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "coisa",
+                        "Offset": 131500000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "que",
+                        "Offset": 135500000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "eu",
+                        "Offset": 136300000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "faço",
+                        "Offset": 137500000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "nem",
+                        "Offset": 142700000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "xixi",
+                        "Offset": 144700000,
+                        "Duration": 6800000
+                    },
+                    {
+                        "Word": "velho",
+                        "Offset": 151500000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "porque",
+                        "Offset": 158300000,
+                        "Duration": 5600000
+                    },
+                    {
+                        "Word": "como",
+                        "Offset": 165100000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "pode",
+                        "Offset": 168300000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "um",
+                        "Offset": 172300000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "cara",
+                        "Offset": 173500000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "escrever",
+                        "Offset": 176300000,
+                        "Duration": 5200000
+                    },
+                    {
+                        "Word": "uma",
+                        "Offset": 181500000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "coisa",
+                        "Offset": 183100000,
+                        "Duration": 6400000
+                    },
+                    {
+                        "Word": "que",
+                        "Offset": 191500000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "eu",
+                        "Offset": 193100000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "não",
+                        "Offset": 194700000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "entenda",
+                        "Offset": 197900000,
+                        "Duration": 7600000
+                    },
+                    {
+                        "Word": "não",
+                        "Offset": 206700000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "tem",
+                        "Offset": 208300000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "como",
+                        "Offset": 210300000,
+                        "Duration": 6800000
+                    },
+                    {
+                        "Word": "eu",
+                        "Offset": 217500000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "vou",
+                        "Offset": 219100000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "ler",
+                        "Offset": 220700000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "aquela",
+                        "Offset": 222300000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "merda",
+                        "Offset": 225500000,
+                        "Duration": 5600000
+                    },
+                    {
+                        "Word": "até",
+                        "Offset": 232700000,
+                        "Duration": 10000000
+                    },
+                    {
+                        "Word": "entender",
+                        "Offset": 242700000,
+                        "Duration": 10000000
+                    },
+                    {
+                        "Word": "isso",
+                        "Offset": 253900000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "é",
+                        "Offset": 256700000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "brio",
+                        "Offset": 257100000,
+                        "Duration": 8000000
+                    },
+                    {
+                        "Word": "senão",
+                        "Offset": 265100000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "o",
+                        "Offset": 270700000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "nego",
+                        "Offset": 271500000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "caga",
+                        "Offset": 274700000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "na",
+                        "Offset": 277900000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "sua",
+                        "Offset": 279100000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "cabeça",
+                        "Offset": 281100000,
+                        "Duration": 6400000
+                    },
+                    {
+                        "Word": "e",
+                        "Offset": 289900000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "você",
+                        "Offset": 291100000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "não",
+                        "Offset": 293500000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "reage",
+                        "Offset": 295900000,
+                        "Duration": 2400000
+                    }
+                ]
+            },
+            {
+                "Confidence": 0.78125995,
+                "Lexical": "nossa eu volto para casa eu vou é a primeira coisa que eu faço nem xixi velho porque como pode um cara escrever uma coisa que eu não entenda não tem como eu vou ler aquela merda até entender isso é brio senão o nego caga na sua cabeça e você não reage",
+                "ITN": "nossa eu volto para casa eu vou é a primeira coisa que eu faço nem xixi velho porque como pode um cara escrever uma coisa que eu não entenda não tem como eu vou ler aquela merda até entender isso é brio senão o nego caga na sua cabeça e você não reage",
+                "MaskedITN": "nossa eu volto para casa eu vou é a primeira coisa que eu faço nem xixi velho porque como pode um cara escrever uma coisa que eu não entenda não tem como eu vou ler aquela merda até entender isso é brio senão o nego caga na sua cabeça e você não reage",
+                "Display": "nossa eu volto para casa eu vou é a primeira coisa que eu faço nem xixi velho porque como pode um cara escrever uma coisa que eu não entenda não tem como eu vou ler aquela merda até entender isso é brio senão o nego caga na sua cabeça e você não reage",
+                "Words": [
+                    {
+                        "Word": "nossa",
+                        "Offset": 101500000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "eu",
+                        "Offset": 105900000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "volto",
+                        "Offset": 107900000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "para",
+                        "Offset": 111900000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "casa",
+                        "Offset": 113900000,
+                        "Duration": 6400000
+                    },
+                    {
+                        "Word": "eu",
+                        "Offset": 121500000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "vou",
+                        "Offset": 123500000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "é",
+                        "Offset": 126300000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "a",
+                        "Offset": 127500000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "primeira",
+                        "Offset": 127900000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "coisa",
+                        "Offset": 131500000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "que",
+                        "Offset": 135500000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "eu",
+                        "Offset": 136300000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "faço",
+                        "Offset": 137500000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "nem",
+                        "Offset": 142700000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "xixi",
+                        "Offset": 144700000,
+                        "Duration": 6800000
+                    },
+                    {
+                        "Word": "velho",
+                        "Offset": 151500000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "porque",
+                        "Offset": 158300000,
+                        "Duration": 5600000
+                    },
+                    {
+                        "Word": "como",
+                        "Offset": 165100000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "pode",
+                        "Offset": 168300000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "um",
+                        "Offset": 172300000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "cara",
+                        "Offset": 173500000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "escrever",
+                        "Offset": 176300000,
+                        "Duration": 5200000
+                    },
+                    {
+                        "Word": "uma",
+                        "Offset": 181500000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "coisa",
+                        "Offset": 183100000,
+                        "Duration": 6400000
+                    },
+                    {
+                        "Word": "que",
+                        "Offset": 191500000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "eu",
+                        "Offset": 193100000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "não",
+                        "Offset": 194700000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "entenda",
+                        "Offset": 197900000,
+                        "Duration": 7600000
+                    },
+                    {
+                        "Word": "não",
+                        "Offset": 206700000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "tem",
+                        "Offset": 208300000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "como",
+                        "Offset": 210300000,
+                        "Duration": 6800000
+                    },
+                    {
+                        "Word": "eu",
+                        "Offset": 217500000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "vou",
+                        "Offset": 219100000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "ler",
+                        "Offset": 220700000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "aquela",
+                        "Offset": 222300000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "merda",
+                        "Offset": 225500000,
+                        "Duration": 5600000
+                    },
+                    {
+                        "Word": "até",
+                        "Offset": 232700000,
+                        "Duration": 10000000
+                    },
+                    {
+                        "Word": "entender",
+                        "Offset": 242700000,
+                        "Duration": 10000000
+                    },
+                    {
+                        "Word": "isso",
+                        "Offset": 253900000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "é",
+                        "Offset": 256700000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "brio",
+                        "Offset": 257100000,
+                        "Duration": 8000000
+                    },
+                    {
+                        "Word": "senão",
+                        "Offset": 265100000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "o",
+                        "Offset": 270700000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "nego",
+                        "Offset": 271500000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "caga",
+                        "Offset": 274700000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "na",
+                        "Offset": 277900000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "sua",
+                        "Offset": 279100000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "cabeça",
+                        "Offset": 281100000,
+                        "Duration": 6400000
+                    },
+                    {
+                        "Word": "e",
+                        "Offset": 289900000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "você",
+                        "Offset": 291100000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "não",
+                        "Offset": 293500000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "reage",
+                        "Offset": 295900000,
+                        "Duration": 2400000
+                    }
+                ]
+            },
+            {
+                "Confidence": 0.78125995,
+                "Lexical": "nossa eu volto para casa eu vou é a primeira coisa que eu faço nem xixi velho porque como pode um cara escrever uma coisa que eu não entenda não tem como eu vou ler aquela merda até entender isso é brio senão o nego caga na sua cabeça e você não reage",
+                "ITN": "nossa eu volto para casa eu vou é a primeira coisa que eu faço nem xixi velho porque como pode um cara escrever uma coisa que eu não entenda não tem como eu vou ler aquela merda até entender isso é brio senão o nego caga na sua cabeça e você não reage",
+                "MaskedITN": "nossa eu volto para casa eu vou é a primeira coisa que eu faço nem xixi velho porque como pode um cara escrever uma coisa que eu não entenda não tem como eu vou ler aquela merda até entender isso é brio senão o nego caga na sua cabeça e você não reage",
+                "Display": "nossa eu volto para casa eu vou é a primeira coisa que eu faço nem xixi velho porque como pode um cara escrever uma coisa que eu não entenda não tem como eu vou ler aquela merda até entender isso é brio senão o nego caga na sua cabeça e você não reage",
+                "Words": [
+                    {
+                        "Word": "nossa",
+                        "Offset": 101500000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "eu",
+                        "Offset": 105900000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "volto",
+                        "Offset": 107900000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "para",
+                        "Offset": 111900000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "casa",
+                        "Offset": 113900000,
+                        "Duration": 6400000
+                    },
+                    {
+                        "Word": "eu",
+                        "Offset": 121500000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "vou",
+                        "Offset": 123500000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "é",
+                        "Offset": 126300000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "a",
+                        "Offset": 127500000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "primeira",
+                        "Offset": 127900000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "coisa",
+                        "Offset": 131500000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "que",
+                        "Offset": 135500000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "eu",
+                        "Offset": 136300000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "faço",
+                        "Offset": 137500000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "nem",
+                        "Offset": 142700000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "xixi",
+                        "Offset": 144700000,
+                        "Duration": 6800000
+                    },
+                    {
+                        "Word": "velho",
+                        "Offset": 151500000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "porque",
+                        "Offset": 158300000,
+                        "Duration": 5600000
+                    },
+                    {
+                        "Word": "como",
+                        "Offset": 165100000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "pode",
+                        "Offset": 168300000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "um",
+                        "Offset": 172300000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "cara",
+                        "Offset": 173500000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "escrever",
+                        "Offset": 176300000,
+                        "Duration": 5200000
+                    },
+                    {
+                        "Word": "uma",
+                        "Offset": 181500000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "coisa",
+                        "Offset": 183100000,
+                        "Duration": 6400000
+                    },
+                    {
+                        "Word": "que",
+                        "Offset": 191500000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "eu",
+                        "Offset": 193100000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "não",
+                        "Offset": 194700000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "entenda",
+                        "Offset": 197900000,
+                        "Duration": 7600000
+                    },
+                    {
+                        "Word": "não",
+                        "Offset": 206700000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "tem",
+                        "Offset": 208300000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "como",
+                        "Offset": 210300000,
+                        "Duration": 6800000
+                    },
+                    {
+                        "Word": "eu",
+                        "Offset": 217500000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "vou",
+                        "Offset": 219100000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "ler",
+                        "Offset": 220700000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "aquela",
+                        "Offset": 222300000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "merda",
+                        "Offset": 225500000,
+                        "Duration": 5600000
+                    },
+                    {
+                        "Word": "até",
+                        "Offset": 232700000,
+                        "Duration": 10000000
+                    },
+                    {
+                        "Word": "entender",
+                        "Offset": 242700000,
+                        "Duration": 10000000
+                    },
+                    {
+                        "Word": "isso",
+                        "Offset": 253900000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "é",
+                        "Offset": 256700000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "brio",
+                        "Offset": 257100000,
+                        "Duration": 8000000
+                    },
+                    {
+                        "Word": "senão",
+                        "Offset": 265100000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "o",
+                        "Offset": 270700000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "nego",
+                        "Offset": 271500000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "caga",
+                        "Offset": 274700000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "na",
+                        "Offset": 277900000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "sua",
+                        "Offset": 279100000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "cabeça",
+                        "Offset": 281100000,
+                        "Duration": 6400000
+                    },
+                    {
+                        "Word": "e",
+                        "Offset": 289900000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "você",
+                        "Offset": 291100000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "não",
+                        "Offset": 293500000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "reage",
+                        "Offset": 295900000,
+                        "Duration": 2400000
+                    }
+                ]
+            }
+        ]
+    }
+]

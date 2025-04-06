@@ -1,0 +1,18 @@
+## PROPROSTA
+
+Usar o **Language Studio** pra explora os recursos de **Analise de sentimento baseado em texto** a partirde um texto gerando uam analise sobre aquela opnião
+
+O TEXTO pode ser em uma lingua e escolher outra que o proprio **Language Studio** efetua a tradução.
+
+## Recusosos usados
+
+UMA avaliaçao d euma usuario aleatorio da internent sobre um jogo [God of War Ragnarok](https://www.tecmundo.com.br/voxel/jogos/god-of-war-ragnarok/analise), essa avaliação esta no arquivo **Language Studio-material.txt**
+
+## Arquivos:
+
+-- PRINTS:
+img/
+
+Language Studio-rsult.json
+
+e Alguns prints do ambiente e sus funcionalidades atual.

@@ -1,0 +1,16 @@
+## PROPROSTA
+
+Usar o **Speach Studio** pra explora os recursos sde **converssão de fala em texto** a partirde um arquivo de audio que pode ser arquivo externo ou gravado, podendo gerar uma rquivo de texto ou json.
+
+O arquivo pode ser em uma lingua e escolher outra que o proprio **Speech Studio** efetua a tradução.
+
+## Recusosos usados
+
+Um Audio famoso do incrivel [CLóvis de Barros](https://www.youtube.com/shorts/WUFKUbzch0Q) que resultou em dois tios de arquivos localizado na pasta com o nome do serviço.
+
+## Arquivos:
+
+Speech Studio.txt
+Speech Studio.json
+
+e Alguns prints do ambiente e sus funcionalidades atual.
