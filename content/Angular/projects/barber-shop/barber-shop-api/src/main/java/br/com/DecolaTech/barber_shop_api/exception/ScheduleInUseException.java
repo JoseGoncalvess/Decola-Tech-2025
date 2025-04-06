@@ -1,9 +1,9 @@
 package br.com.DecolaTech.barber_shop_api.exception;
 
 
-public class PhoneInUseException extends RuntimeException {
+public class ScheduleInUseException extends RuntimeException {
 
-    public PhoneInUseException(String message) {
+    public ScheduleInUseException(String message) {
         super(message);
     }
 

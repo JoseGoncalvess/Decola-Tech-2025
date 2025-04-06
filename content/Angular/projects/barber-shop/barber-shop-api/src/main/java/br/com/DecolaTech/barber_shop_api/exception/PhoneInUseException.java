@@ -1,9 +1,9 @@
 package br.com.DecolaTech.barber_shop_api.exception;
 
 
-public class NotFoundException extends RuntimeException {
+public class PhoneInUseException extends RuntimeException {
 
-    public NotFoundException(String message) {
+    public PhoneInUseException(String message) {
         super(message);
     }
 

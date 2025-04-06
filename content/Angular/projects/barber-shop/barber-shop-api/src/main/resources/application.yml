@@ -2,9 +2,10 @@ spring:
   application:
     name: barber-shop-api
   datasource:
-    url: ${DB_URL}
-    username: ${DB_USER}
-    password: ${DB_PASSWORD}
+    url: jdbc:postgresql://localhost:5432/baberSistem_db
+    username: user
+    password: root
+
   jpa:
     hibernate:
       ddl-auto: validate

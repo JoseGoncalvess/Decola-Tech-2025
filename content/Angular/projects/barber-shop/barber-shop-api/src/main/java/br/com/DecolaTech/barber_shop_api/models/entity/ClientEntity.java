@@ -10,15 +10,22 @@ import java.util.Objects;
 import java.util.Set;
 
 import static jakarta.persistence.CascadeType.ALL;
+import static jakarta.persistence.GenerationType.IDENTITY;
 
-
+@Entity
+@Table(
+        name = "CLIENTS",
+        uniqueConstraints = {
+                @UniqueConstraint(name = "UK_EMAIL", columnNames = "email"),
+                @UniqueConstraint(name = "UK_PHONE", columnNames = "phone")
+        }
+)
 @Getter
 @Setter
 @ToString
-@Entity
 public class ClientEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = IDENTITY)
     private Long id;
 
     @Column(nullable = false, length = 150)

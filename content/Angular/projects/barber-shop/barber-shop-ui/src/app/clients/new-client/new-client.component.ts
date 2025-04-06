@@ -8,6 +8,7 @@ import { ClientModelForm } from '../client.models';
 import { Router } from '@angular/router';
 import { SnackbarManagerService } from '../../services/snackbar-manager.service';
 import { ISnackbarManagerService } from '../../services/isnackbar-manager.service';
+import { error } from 'node:console';
 
 @Component({
   selector: 'app-new-client',
@@ -22,14 +23,11 @@ import { ISnackbarManagerService } from '../../services/isnackbar-manager.servic
 export class NewClientComponent implements OnDestroy {
   private httpSubscription?: Subscription
 
-
   constructor(
-    private router: Router,
     @Inject(SERVICE_TOKEN.HTTP.CLIENT) private readonly httpService: IClientService,
-    @Inject(SERVICE_TOKEN.SNACKBAR) private readonly snackBarManager: ISnackbarManagerService,) {
-
-  }
-
+    @Inject(SERVICE_TOKEN.SNACKBAR) private readonly snackBarManager: ISnackbarManagerService,
+    private readonly router: Router
+  ) { }
 
   ngOnDestroy(): void {
     if (this.httpSubscription) {
@@ -38,11 +36,19 @@ export class NewClientComponent implements OnDestroy {
   }
 
   onSubmitClient(value: ClientModelForm) {
+    console.log(this.httpSubscription);
+    console.log(value);
+
     const { id, ...request } = value
     this.httpSubscription = this.httpService.save(request).subscribe(_ => {
+      console.log(request);
+
       this.snackBarManager.show('Usuário cadastrado com sucesso')
       this.router.navigate(['clients/list'])
-    })
+    }, error =>  {
+      console.error('Error:', error);
+      this.snackBarManager.show('Erro ao cadastrar usuario!');
+    });
   }
 
 

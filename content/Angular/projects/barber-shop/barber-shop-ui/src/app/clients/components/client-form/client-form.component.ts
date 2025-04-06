@@ -26,8 +26,6 @@ export class ClientFormComponent {
 
   onSubmit(_: NgForm) {
     this.clientSubmited.emit(this.client)
-    console.log(this.client);
-
   }
 
 }
