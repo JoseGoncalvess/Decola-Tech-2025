@@ -1,0 +1,134 @@
+[
+    {
+      "name": "João Silva",
+      "age": 32,
+      "cursos": ["Engenharia de Software", "Scrum Master", "AWS Essentials"],
+      "salario": 8500
+    },
+    {
+      "name": "Maria Oliveira",
+      "age": 28,
+      "cursos": ["Python para Data Science", "Certificação Microsoft Azure"],
+      "salario": 7200
+    },
+    {
+      "name": "Carlos Pereira",
+      "age": 40,
+      "cursos": ["Gestão de Projetos", "PMP Certification", "Scrum Master"],
+      "salario": 9500
+    },
+    {
+      "name": "Ana Souza",
+      "age": 25,
+      "cursos": ["Desenvolvimento Front-End", "React Advanced"],
+      "salario": 6800
+    },
+    {
+      "name": "Luiz Santos",
+      "age": 29,
+      "cursos": ["Node.js", "MongoDB Essentials"],
+      "salario": 7000
+    },
+    {
+      "name": "Fernanda Almeida",
+      "age": 35,
+      "cursos": ["Gestão de Pessoas", "Coach Executivo"],
+      "salario": 8700
+    },
+    {
+      "name": "Ricardo Lima",
+      "age": 38,
+      "cursos": ["Angular Avançado", "Certificação Google Cloud"],
+      "salario": 8900
+    },
+    {
+      "name": "Juliana Costa",
+      "age": 26,
+      "cursos": ["JavaScript", "HTML e CSS", "UI/UX Design"],
+      "salario": 6700
+    },
+    {
+      "name": "Pedro Nascimento",
+      "age": 33,
+      "cursos": ["Python Avançado", "Data Analysis with Excel"],
+      "salario": 7800
+    },
+    {
+      "name": "Isabela Mendes",
+      "age": 30,
+      "cursos": ["DevOps", "Certificação Docker"],
+      "salario": 8200
+    },
+    {
+      "name": "Renato Fernandes",
+      "age": 27,
+      "cursos": ["Machine Learning", "Certificação TensorFlow"],
+      "salario": 7400
+    },
+    {
+      "name": "Camila Martins",
+      "age": 31,
+      "cursos": ["Banco de Dados", "SQL Avançado"],
+      "salario": 8000
+    },
+    {
+      "name": "André Dias",
+      "age": 29,
+      "cursos": ["Kubernetes", "Certified Kubernetes Administrator"],
+      "salario": 8300
+    },
+    {
+      "name": "Vanessa Rocha",
+      "age": 34,
+      "cursos": ["Java Avançado", "Spring Boot Essentials"],
+      "salario": 8700
+    },
+    {
+      "name": "Fábio Monteiro",
+      "age": 36,
+      "cursos": ["C#", "Certificação .NET"],
+      "salario": 8900
+    },
+    {
+      "name": "Larissa Antunes",
+      "age": 24,
+      "cursos": ["Design Gráfico", "Adobe Suite"],
+      "salario": 6300
+    },
+    {
+      "name": "Bruno Moreira",
+      "age": 37,
+      "cursos": ["Big Data", "Hadoop Essentials"],
+      "salario": 9200
+    },
+    {
+      "name": "Patrícia Ramos",
+      "age": 29,
+      "cursos": ["Automação de Testes", "Certificação Selenium"],
+      "salario": 7600
+    },
+    {
+      "name": "Felipe Teixeira",
+      "age": 41,
+      "cursos": ["Arquitetura de Software", "TOGAF Certification"],
+      "salario": 9800
+    },
+    {
+      "name": "Tatiane Luz",
+      "age": 27,
+      "cursos": ["Ruby on Rails", "Metodologias Ágeis"],
+      "salario": 7500
+    },
+    {
+      "name": "Eduardo Simões",
+      "age": 28,
+      "cursos": ["Inteligência Artificial", "Certificação OpenAI"],
+      "salario": 7900
+    },
+    {
+      "name": "Cristina Batista",
+      "age": 30,
+      "cursos": ["Cybersecurity", "ISO 27001 Certification"],
+      "salario": 8500
+    }
+  ]

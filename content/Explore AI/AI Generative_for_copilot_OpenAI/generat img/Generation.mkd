@@ -1,0 +1,6 @@
+## Pergunta;
+
+Poderia gerar uma imagem do home aranha plantando bananeira!
+
+O resultaod obtido foi o seguinte
+<img src="./Result.png" alt="" srcset="">

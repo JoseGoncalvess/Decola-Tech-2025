@@ -1,0 +1,14 @@
+## question prompt:
+
+Poderia gerar um mock em .json de uma class pode incrementar valores que achar justo populando o .json com 22 entidades
+
+```JavaScript
+interface  Funcionário {
+    name:string,
+    age:number,
+    cusos:string[],
+    salario:number
+}
+```
+
+O resultado esta presnete no json na pasta desta solicitação, basta conferir.
