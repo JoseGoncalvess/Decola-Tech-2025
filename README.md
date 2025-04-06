@@ -38,7 +38,7 @@ Durante o bootcamp, você terá contato com as seguintes tecnologias:
 | Tecnologia      | Descrição                                                             | Logo                                                                                                             |
 | --------------- | --------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | **Spring Boot** | Framework Java para criação de aplicações robustas e escaláveis.      | <img src="https://rdrblog.com.br/wp-content/uploads/2020/08/Spring-BOOT-Interview-questions-1.jpg" width="200" > |
-| **Angular**     | Framework TypeScript para desenvolvimento de aplicações web modernas. | <img src="https://angular.io/assets/images/logos/angular/angular. svg" width="200" >                             |
+| **Angular**     | Framework TypeScript para desenvolvimento de aplicações web modernas. | <img src="https://angular.io/assets/images/logos/angular/angular.svg" width="200">                               |
 | **HTML**        | Linguagem de marcação para estruturação de páginas web.               | <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" width="200" >         |
 | **CSS**         | Linguagem de estilo para design e layout de páginas web.              | <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" width="200" >          |
 | **JavaScript**  | Linguagem de programação para interatividade em páginas web.          | <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width="200" >                 |
