@@ -41,6 +41,17 @@ public class ClientEntity {
     @OneToMany(mappedBy = "client", cascade = ALL, orphanRemoval = true)
     private Set<ScheduleEntity> schedules = new HashSet<>();
 
+
+    public ClientEntity(Long id, String name, String email, String phone, Set<ScheduleEntity> schedules) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.phone = phone;
+        this.schedules = schedules;
+    }
+
+    public ClientEntity(){}
+
     @Override
     public boolean equals(final Object o) {
         if (!(o instanceof ClientEntity that)) return false;

@@ -9,11 +9,11 @@ public interface IClientQueryService {
 
     List<ClientEntity> findAllClients();
 
-    void verifyPhone(final String phone);
+    Boolean verifyPhone(final String phone);
 
     void verifyPhoneAndId(final long id,final String phone);
 
-    void verifyEmail(final String email);
+    Boolean verifyEmail(final String email);
 
     void verifyEmailAndId(final long id,final String email);
 }

@@ -29,10 +29,11 @@ public class ClientQueryService implements IClientQueryService {
     }
 
     @Override
-    public void verifyPhone(String phone) {
+    public Boolean verifyPhone(String phone)  {
        if (repository.existsByPhone(phone)){
            throw  new PhoneInUseException("O telefone "+phone + " já está em uso");
        }
+        return  true;
     }
 
     @Override
@@ -44,13 +45,13 @@ public class ClientQueryService implements IClientQueryService {
     }
 
     @Override
-    public void verifyEmail(String email) {
-
+    public Boolean verifyEmail(String email) {
         if (repository.existsByEmail(email)) {
             var message = "O e-mail " + email + " já está em uso";
             throw new EmailInUseException(message);
 
         }
+        return  true;
     }
 
     @Override
