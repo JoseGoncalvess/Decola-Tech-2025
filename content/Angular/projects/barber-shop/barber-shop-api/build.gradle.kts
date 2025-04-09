@@ -36,6 +36,8 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("org.mapstruct:mapstruct:$mapStructVersion")
 
+	testImplementation ("com.h2database:h2:2.3.232")
+
 	implementation("org.flywaydb:flyway-core")
 
 	implementation("org.flywaydb:flyway-database-postgresql")

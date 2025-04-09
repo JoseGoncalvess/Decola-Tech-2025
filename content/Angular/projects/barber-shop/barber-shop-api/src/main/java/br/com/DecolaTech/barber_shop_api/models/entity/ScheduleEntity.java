@@ -36,6 +36,17 @@ public class ScheduleEntity {
     @JoinColumn(name = "client_id")
     private ClientEntity client = new ClientEntity();
 
+    public ScheduleEntity(Long id, OffsetDateTime startAt, OffsetDateTime endAt, ClientEntity client) {
+        this.id = id;
+        this.startAt = startAt;
+        this.endAt = endAt;
+        this.client = client;
+    }
+
+    public ScheduleEntity() {}
+
+
+
     @Override
     public boolean equals(final Object o) {
         if (!(o instanceof ScheduleEntity that)) return false;

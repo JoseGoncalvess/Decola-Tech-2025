@@ -4,6 +4,7 @@ import br.com.DecolaTech.barber_shop_api.models.entity.ScheduleEntity;
 import br.com.DecolaTech.barber_shop_api.repository.ScheduleEntityRepository;
 import br.com.DecolaTech.barber_shop_api.services.IScheduleService;
 import br.com.DecolaTech.barber_shop_api.services.query.IScheduleQueryService;
+import br.com.DecolaTech.barber_shop_api.services.query.impl.ScheduleQueryService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +12,7 @@ import org.springframework.stereotype.Service;
 @AllArgsConstructor
 public class ScheduleService implements IScheduleService {
     private final ScheduleEntityRepository repository;
-    private final IScheduleQueryService queryService;
+    private final ScheduleQueryService queryService;
 
     @Override
     public ScheduleEntity save(ScheduleEntity entity) {

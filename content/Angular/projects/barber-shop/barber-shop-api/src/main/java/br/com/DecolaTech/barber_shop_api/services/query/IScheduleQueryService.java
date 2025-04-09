@@ -10,5 +10,5 @@ public interface IScheduleQueryService {
 
     List<ScheduleEntity> findInMonth(final OffsetDateTime startAt, final OffsetDateTime endAt);
 
-    void verifyIfScheduleExists(final OffsetDateTime startAt, final OffsetDateTime endAt);
+    boolean verifyIfScheduleExists(final OffsetDateTime startAt, final OffsetDateTime endAt);
 }

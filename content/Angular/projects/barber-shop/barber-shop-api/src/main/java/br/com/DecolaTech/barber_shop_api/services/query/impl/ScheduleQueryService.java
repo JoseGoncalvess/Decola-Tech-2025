@@ -1,5 +1,7 @@
 package br.com.DecolaTech.barber_shop_api.services.query.impl;
 
+import br.com.DecolaTech.barber_shop_api.exception.NotFoundException;
+import br.com.DecolaTech.barber_shop_api.exception.ScheduleInUseException;
 import br.com.DecolaTech.barber_shop_api.models.entity.ScheduleEntity;
 import br.com.DecolaTech.barber_shop_api.repository.ScheduleEntityRepository;
 import br.com.DecolaTech.barber_shop_api.services.query.IScheduleQueryService;
@@ -17,7 +19,7 @@ public class ScheduleQueryService implements IScheduleQueryService {
     @Override
     public ScheduleEntity findById(long id) {
         return repository.findById(id).orElseThrow(
-                () -> new RuntimeException("Agendamento não encontrado")
+                () -> new NotFoundException("Agendamento não encontrado")
         );
     }
 
@@ -27,11 +29,11 @@ public class ScheduleQueryService implements IScheduleQueryService {
     }
 
     @Override
-    public void verifyIfScheduleExists(OffsetDateTime startAt, OffsetDateTime endAt) {
+    public boolean verifyIfScheduleExists(OffsetDateTime startAt, OffsetDateTime endAt) {
         if (repository.existsByStartAtAndEndAt(startAt, endAt)) {
-            throw  new RuntimeException("Já existe um cliente agendado no horário solicitado");
+            throw  new ScheduleInUseException("Já existe um cliente agendado no horário solicitado");
             
         }
-
+        return  true;
     }
 }
